@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#202321">
+  <meta name="description" content="Saiman Silwal's web programming folders and file previews.">
+  <title>Saiman Silwal (202537200)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Saiman Silwal, Web Programming portfolio">
+      <span class="brand-mark" aria-hidden="true">SS</span>
+      <span class="brand-copy"><strong>Saiman Silwal</strong><small>WEB PROGRAMMING</small></span>
+    </a>
+    <div class="topbar-note"><span>STUDENT ID</span><strong>202537200</strong></div>
+  </header>
+
+  <main class="app-shell">
+    <section class="file-workspace" aria-label="Shared folder browser">
+        <div class="file-toolbar">
+          <div id="repo-context" class="repo-context"><span class="context-icon">▧</span><span>Select a folder</span></div>
+          <nav id="breadcrumb" class="breadcrumb" aria-label="Current folder"></nav>
+        </div>
+        <nav id="shared-folders" class="shared-folders" aria-label="Shared folders"></nav>
+        <div class="browser-body">
+          <aside class="file-sidebar" aria-label="Repository files">
+            <div class="file-sidebar-heading"><span>FOLDERS &amp; FILES</span><button id="refresh-button" class="icon-button" type="button" title="Refresh folder" aria-label="Refresh folder" disabled>↻</button></div>
+            <div id="file-tree" class="file-tree"><div class="tree-placeholder">Choose a shared folder.</div></div>
+          </aside>
+          <section class="preview-pane" aria-label="File preview">
+            <div id="preview" class="preview-empty">
+              <div class="preview-art" aria-hidden="true">
+                <span class="art-sheet art-sheet-lime"></span>
+                <span class="art-sheet art-sheet-coral"></span>
+                <span class="art-sheet art-sheet-paper"><i></i><i></i><i></i><b>OPEN<br>FILE</b></span>
+                <span class="art-sticker">01</span>
+                <span class="art-spark">✳</span>
+              </div>
+              <p class="eyebrow">YOUR WORKSPACE</p>
+              <h2>Pick a file.<br>See it come to life.</h2>
+              <p>Choose an item from the explorer to open its output here.</p>
+            </div>
+          </section>
+        </div>
+        <div class="statusbar"><span id="status-message"><span class="status-dot muted"></span> Waiting for a folder</span><span id="branch-label">GITHUB</span></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
