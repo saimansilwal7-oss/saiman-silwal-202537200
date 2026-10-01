@@ -443,7 +443,14 @@ function renderSharedFolders() {
     const button = document.createElement("button");
     button.type = "button";
     button.className = "shared-folder-button";
-    button.textContent = folder.label;
+    button.dataset.folderLabel = folder.label;
+    const index = document.createElement("span");
+    index.className = "week-index";
+    index.textContent = String(SHARED_FOLDERS.indexOf(folder) + 1).padStart(2, "0");
+    const label = document.createElement("span");
+    label.className = "week-name";
+    label.textContent = folder.label;
+    button.append(index, label);
     button.setAttribute("aria-current", "false");
     button.addEventListener("click", () => loadSharedFolder(folder));
     elements.sharedFolders.append(button);
@@ -483,7 +490,7 @@ async function loadSharedFolder(folder) {
   elements.fileTree.replaceChildren();
   elements.preview.replaceChildren();
   elements.sharedFolders.querySelectorAll(".shared-folder-button").forEach((button) => {
-    button.setAttribute("aria-current", String(button.textContent === folder.label));
+    button.setAttribute("aria-current", String(button.dataset.folderLabel === folder.label));
   });
   const loading = document.createElement("div");
   loading.className = "loading-line";

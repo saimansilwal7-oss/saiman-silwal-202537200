@@ -32,6 +32,13 @@ button { color: inherit; }
 .status-dot.muted { background: #aeb2aa; box-shadow: none; }
 
 .app-shell { width: min(1400px, 100%); margin: 0 auto; padding: 24px clamp(20px, 5vw, 76px) 30px; }
+.archive-heading { min-height: 95px; display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 0 4px 17px; }
+.archive-heading .eyebrow { margin: 0 0 5px; color: #7d8077; font-size: 9px; }
+.archive-heading h1 { margin: 0; color: var(--ink); font: 700 31px/1.08 var(--display); }
+.archive-heading h1 span { color: var(--orange); }
+.archive-count { display: flex; align-items: center; gap: 10px; padding: 8px 13px 8px 9px; border: 1px solid #dcd9cc; background: #fffefa; }
+.archive-count strong { width: 38px; height: 38px; display: grid; place-items: center; background: #5475d8; color: white; font: 700 15px var(--mono); transform: rotate(-4deg); }
+.archive-count span { color: #676d63; font: 8px/1.5 var(--mono); }
 .intro { position: relative; min-height: 310px; display: grid; grid-template-columns: 1fr minmax(310px, 430px); align-items: center; gap: 40px; padding: 48px 0 42px; border-bottom: 1px solid #dfe0d9; }
 .eyebrow { margin: 0 0 12px; color: #797e75; }
 .intro h1 { margin: 0; font-family: var(--display); font-size: clamp(44px, 5vw, 68px); line-height: .99; font-weight: 600; letter-spacing: 0; }
@@ -72,21 +79,23 @@ button { color: inherit; }
 .rail-footer { display: flex; align-items: center; gap: 8px; padding-top: 14px; border-top: 1px solid #dfe0d9; color: #8b9088; font-size: 10px; }
 .github-mark { color: var(--ink); font-size: 13px; }
 
-.file-workspace { width: 100%; min-width: 0; height: min(760px, calc(100vh - 132px)); min-height: 520px; display: flex; flex-direction: column; border: 1px solid #d7d7ce; background: var(--white); box-shadow: 7px 7px 0 var(--ink); }
+.file-workspace { width: 100%; min-width: 0; height: min(690px, calc(100vh - 235px)); min-height: 500px; display: flex; flex-direction: column; border: 1px solid #d7d7ce; background: var(--white); box-shadow: 7px 7px 0 var(--ink); }
 .file-toolbar { min-height: 47px; display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 0 15px; border-bottom: 1px solid var(--line); }
 .repo-context { min-width: 0; display: flex; gap: 8px; align-items: center; color: #444943; font-size: 11px; font-weight: 700; }
 .repo-context > span:last-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .context-icon { color: #7f8a76; font-size: 14px; }
-.shared-folders { min-height: 43px; display: flex; align-items: stretch; gap: 4px; overflow-x: auto; padding: 0 13px; border-bottom: 1px solid var(--line); background: #fbfbf9; }
-.shared-folder-button { position: relative; flex: 0 0 auto; padding: 0 13px; border: 0; background: transparent; color: #787e74; font: 10px var(--mono); cursor: pointer; }
+.shared-folders { min-height: 72px; display: flex; align-items: center; gap: 8px; overflow-x: auto; padding: 10px 13px; border-bottom: 1px solid var(--line); background: #f7f7f2; }
+.shared-folder-button { min-width: 112px; height: 49px; position: relative; flex: 1 0 0; display: flex; align-items: center; gap: 9px; padding: 0 10px; border: 1px solid #e5e4dc; border-bottom: 3px solid transparent; background: #fffefa; color: #52594f; text-align: left; font: 10px var(--mono); cursor: pointer; transition: transform .18s, background .18s, border-color .18s; }
+.shared-folder-button:hover { transform: translateY(-2px); border-color: var(--tab-color); }
+.week-index { width: 26px; height: 26px; flex: 0 0 26px; display: grid; place-items: center; background: color-mix(in srgb, var(--tab-color) 18%, white); color: var(--tab-color); font: 9px var(--mono); }
+.week-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .shared-folder-button:nth-child(1) { --tab-color: #f07851; }
 .shared-folder-button:nth-child(2) { --tab-color: #5475d8; }
 .shared-folder-button:nth-child(3) { --tab-color: #a269bd; }
 .shared-folder-button:nth-child(4) { --tab-color: #159783; }
 .shared-folder-button:nth-child(5) { --tab-color: #c58b20; }
 .shared-folder-button:hover { color: var(--ink); background: #f0f2eb; }
-.shared-folder-button[aria-current="true"] { color: var(--tab-color); font-weight: 700; }
-.shared-folder-button[aria-current="true"]::after { content: ""; position: absolute; right: 10px; bottom: 0; left: 10px; height: 3px; background: var(--tab-color); }
+.shared-folder-button[aria-current="true"] { border-bottom-color: var(--tab-color); background: color-mix(in srgb, var(--tab-color) 8%, white); color: var(--tab-color); font-weight: 700; }
 .breadcrumb { min-width: 0; display: flex; align-items: center; overflow: hidden; color: #949991; font: 10px var(--mono); white-space: nowrap; }
 .breadcrumb:empty { display: none; }
 .crumb { padding: 4px 3px; border: 0; background: transparent; color: #686f65; font: inherit; cursor: pointer; }
@@ -170,7 +179,13 @@ button { color: inherit; }
   .topbar-note { gap: 7px; font-size: 8px; }
   .topbar-note strong { padding: 7px; font-size: 10px; }
   .app-shell { padding: 0 16px; }
-  .app-shell { padding-top: 18px; }
+  .app-shell { padding-top: 14px; }
+  .archive-heading { min-height: 78px; padding-bottom: 12px; }
+  .archive-heading h1 { font-size: 23px; }
+  .archive-heading .eyebrow { font-size: 8px; }
+  .archive-count { gap: 7px; padding: 6px 8px 6px 6px; }
+  .archive-count strong { width: 31px; height: 31px; font-size: 12px; }
+  .archive-count span { font-size: 7px; }
   .intro { display: block; padding: 37px 0 28px; }
   .intro h1 { font-size: 48px; }
   .intro-description { max-width: 365px; margin-top: 12px; font-size: 13px; }
@@ -178,10 +193,12 @@ button { color: inherit; }
   .workspace { display: flex; flex-direction: column; gap: 18px; padding: 22px 0; }
   .repo-rail { min-height: 150px; }
   .repo-list { max-height: 180px; overflow: auto; }
-  .file-workspace { height: min(730px, calc(100vh - 110px)); min-height: 520px; }
+  .file-workspace { height: min(660px, calc(100vh - 205px)); min-height: 460px; }
   .file-toolbar { align-items: flex-start; flex-direction: column; justify-content: center; gap: 2px; padding: 9px 12px; }
   .breadcrumb { width: 100%; padding-left: 20px; font-size: 9px; }
   .browser-body { grid-template-columns: 138px minmax(0, 1fr); min-height: 0; }
+  .shared-folders { min-height: 66px; gap: 6px; padding: 8px; }
+  .shared-folder-button { min-width: 102px; height: 45px; flex: 0 0 auto; gap: 7px; padding: 0 8px; }
   .preview-content { padding: 14px; }
   .preview-empty { padding: 23px 12px; }
   .preview-art { transform: scale(.82); margin: -12px 0 -6px; }
