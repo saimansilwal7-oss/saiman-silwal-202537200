@@ -401,18 +401,22 @@ async function openFile(file) {
       return;
     }
 
-    if (["html", "htm"].includes(extension)) {
+    const htmlProbe = text.replace(/^\uFEFF/, "").trimStart();
+    const isHtmlDocument = ["html", "htm"].includes(extension)
+      || /^<!doctype\s+html\b/i.test(htmlProbe)
+      || /^<html(?:\s|>)/i.test(htmlProbe);
+    if (isHtmlDocument) {
       const frame = document.createElement("iframe");
       frame.className = "html-frame";
       frame.title = `Preview of ${file.name}`;
-      frame.setAttribute("sandbox", "");
+      frame.setAttribute("sandbox", "allow-scripts");
       const baseUrl = rawUrl.slice(0, rawUrl.lastIndexOf("/") + 1);
       const baseTag = `<base href="${escapeHtml(baseUrl)}">`;
       frame.srcdoc = /<head(?:\s[^>]*)?>/i.test(text)
         ? text.replace(/<head(?:\s[^>]*)?>/i, (head) => `${head}${baseTag}`)
         : `${baseTag}${text}`;
       elements.preview.replaceChildren(previewHeader(file.path, rawUrl), frame);
-      setStatus(`HTML page · scripts disabled · ${file.name}`, "active");
+      setStatus(`HTML preview · sandboxed · ${file.name}`, "active");
     } else if (["md", "markdown"].includes(extension)) {
       content.className = "preview-content markdown-content";
       content.innerHTML = renderMarkdown(text);
