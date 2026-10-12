@@ -7,6 +7,7 @@ const SHARED_FOLDERS = [
   { label: "WEEK3", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK3" },
   { label: "WEEK3.2", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK3.2" },
   { label: "WEEK4", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK4" },
+  { label: "WEEK 5", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/fbc974d95bc26a54968ea584a4ed0c8053f0da78/WEEK%205" },
 ];
 
 const elements = {
