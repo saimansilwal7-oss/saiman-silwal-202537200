@@ -1,13 +1,242 @@
 const API_ROOT = "https://api.github.com";
 const RAW_ROOT = "https://raw.githubusercontent.com";
 const MAX_PREVIEW_BYTES = 2 * 1024 * 1024;
+const STATIC_TREES = {
+  "WEEK 1": [
+    {
+      "path": "EX-1.html",
+      "type": "blob",
+      "size": 235
+    },
+    {
+      "path": "EX-2.html",
+      "type": "blob",
+      "size": 724
+    },
+    {
+      "path": "EX-3.html",
+      "type": "blob",
+      "size": 1312
+    },
+    {
+      "path": "EX-4.html",
+      "type": "blob",
+      "size": 424
+    },
+    {
+      "path": "EX-5.html",
+      "type": "blob",
+      "size": 1013
+    },
+    {
+      "path": "EX-6.html",
+      "type": "blob",
+      "size": 696
+    },
+    {
+      "path": "EX-7.html",
+      "type": "blob",
+      "size": 1385
+    },
+    {
+      "path": "EX-8.html",
+      "type": "blob",
+      "size": 2118
+    },
+    {
+      "path": "TEMP.TXT",
+      "type": "blob",
+      "size": 1
+    }
+  ],
+  "WEEK2": [
+    {
+      "path": "ACTIVITY",
+      "type": "blob",
+      "size": 1
+    },
+    {
+      "path": "TASK 1.html",
+      "type": "blob",
+      "size": 509
+    },
+    {
+      "path": "TASK2.html",
+      "type": "blob",
+      "size": 1618
+    },
+    {
+      "path": "TASK3.html",
+      "type": "blob",
+      "size": 997
+    },
+    {
+      "path": "TASK4.html",
+      "type": "blob",
+      "size": 922
+    },
+    {
+      "path": "TASK5.html",
+      "type": "blob",
+      "size": 4063
+    },
+    {
+      "path": "TASK6.html",
+      "type": "blob",
+      "size": 485
+    },
+    {
+      "path": "TASK7.html",
+      "type": "blob",
+      "size": 1007
+    },
+    {
+      "path": "TASK8.html",
+      "type": "blob",
+      "size": 4513
+    }
+  ],
+  "WEEK3": [
+    {
+      "path": "E1",
+      "type": "blob",
+      "size": 114
+    },
+    {
+      "path": "E2",
+      "type": "blob",
+      "size": 532
+    },
+    {
+      "path": "E3",
+      "type": "blob",
+      "size": 941
+    },
+    {
+      "path": "E4",
+      "type": "blob",
+      "size": 757
+    },
+    {
+      "path": "E5",
+      "type": "blob",
+      "size": 647
+    },
+    {
+      "path": "E6",
+      "type": "blob",
+      "size": 1031
+    },
+    {
+      "path": "E7",
+      "type": "blob",
+      "size": 2172
+    },
+    {
+      "path": "E8",
+      "type": "blob",
+      "size": 6116
+    },
+    {
+      "path": "TXT.html",
+      "type": "blob",
+      "size": 1
+    }
+  ],
+  "WEEK3.2": [
+    {
+      "path": "E1",
+      "type": "blob",
+      "size": 919
+    },
+    {
+      "path": "E2",
+      "type": "blob",
+      "size": 471
+    },
+    {
+      "path": "E3",
+      "type": "blob",
+      "size": 471
+    },
+    {
+      "path": "E4",
+      "type": "blob",
+      "size": 939
+    },
+    {
+      "path": "E5",
+      "type": "blob",
+      "size": 1197
+    },
+    {
+      "path": "E6",
+      "type": "blob",
+      "size": 1349
+    },
+    {
+      "path": "E7",
+      "type": "blob",
+      "size": 3011
+    }
+  ],
+  "WEEK4": [
+    {
+      "path": "E1",
+      "type": "blob",
+      "size": 816
+    },
+    {
+      "path": "E2",
+      "type": "blob",
+      "size": 1130
+    },
+    {
+      "path": "E3",
+      "type": "blob",
+      "size": 1967
+    },
+    {
+      "path": "E4",
+      "type": "blob",
+      "size": 1555
+    },
+    {
+      "path": "HTNL.TXT",
+      "type": "blob",
+      "size": 1
+    }
+  ],
+  "WEEK 5": [
+    {
+      "path": "Complete mini-app",
+      "type": "blob",
+      "size": 1815
+    },
+    {
+      "path": "Conditions(if_else)",
+      "type": "blob",
+      "size": 1175
+    },
+    {
+      "path": "Loops",
+      "type": "blob",
+      "size": 925
+    },
+    {
+      "path": "txt.html",
+      "type": "blob",
+      "size": 1
+    }
+  ]
+};
 const SHARED_FOLDERS = [
   { label: "WEEK 1", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK%201" },
   { label: "WEEK2", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK2" },
   { label: "WEEK3", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK3" },
   { label: "WEEK3.2", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK3.2" },
   { label: "WEEK4", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK4" },
-  { label: "WEEK 5", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/fbc974d95bc26a54968ea584a4ed0c8053f0da78/WEEK%205" },
+  { label: "WEEK 5", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK%205" },
 ];
 
 const elements = {
@@ -504,46 +733,35 @@ async function loadSharedFolder(folder) {
 
   try {
     const target = parseFolderLink(folder);
-    const repoUrl = `${API_ROOT}/repos/${encodeURIComponent(target.owner)}/${encodeURIComponent(target.repository)}`;
-    const metadata = await apiGet(repoUrl);
-    if (request !== state.folderRequest) return;
-    if (metadata.private) throw new Error("This folder is in a private repository and cannot be loaded without sign-in.");
+    const folderEntries = STATIC_TREES[folder.label];
+    if (!folderEntries) throw new Error(`No saved folder index exists for ${folder.label}.`);
     const repository = {
-      id: metadata.id,
-      owner: metadata.owner,
-      name: metadata.name,
-      full_name: metadata.full_name,
-      default_branch: target.branch || metadata.default_branch,
+      id: 0,
+      owner: { login: target.owner },
+      name: target.repository,
+      full_name: `${target.owner}/${target.repository}`,
+      default_branch: target.branch || "main",
       folderPath: target.folderPath,
       folderLabel: folder.label,
     };
     state.selectedRepository = repository;
     elements.branch.textContent = repository.default_branch.toUpperCase();
-    const branch = encodeURIComponent(repository.default_branch);
-    const data = await apiGet(`${API_ROOT}/repos/${encodeURIComponent(target.owner)}/${encodeURIComponent(target.repository)}/git/trees/${branch}?recursive=1`);
-    if (request !== state.folderRequest) return;
-
-    const prefix = repository.folderPath ? `${repository.folderPath}/` : "";
-    const subtree = (data.tree || []).filter((entry) => repository.folderPath
-      ? (entry.path === repository.folderPath && entry.type === "tree") || entry.path.startsWith(prefix)
-      : true);
-    if (repository.folderPath && subtree.length === 0) {
-      throw new Error(`The folder "${repository.folderPath}" was not found on the ${repository.default_branch} branch.`);
-    }
-    const scopedEntries = subtree
-      .filter((entry) => entry.path !== repository.folderPath)
-      .map((entry) => ({ ...entry, path: entry.path.slice(prefix.length) }));
+    const scopedEntries = folderEntries.map((entry) => ({ ...entry }));
     const built = buildTree(scopedEntries);
     state.tree = built.root.children;
     state.treeByPath = built.treeByPath;
     renderTree();
     renderBreadcrumb();
     elements.refreshButton.disabled = false;
-    if (data.truncated) setStatus("GitHub shortened this large folder tree; some entries may be missing.");
-    else setStatus(`${scopedEntries.length} items · ${folder.label}`, "active");
-
+    setStatus(`${scopedEntries.length} items · ${folder.label}`, "active");
     showEmptyPreview();
   } catch (error) {
+    if (request !== state.folderRequest) return;
+    showError(elements.fileTree, error.message);
+    showError(elements.preview, error.message);
+    setStatus(`Could not load ${folder.label}`);
+  }
+}
     if (request !== state.folderRequest) return;
     showError(elements.fileTree, error.message);
     showError(elements.preview, error.message);
