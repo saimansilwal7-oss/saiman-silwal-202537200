@@ -762,12 +762,6 @@ async function loadSharedFolder(folder) {
     setStatus(`Could not load ${folder.label}`);
   }
 }
-    if (request !== state.folderRequest) return;
-    showError(elements.fileTree, error.message);
-    showError(elements.preview, error.message);
-    setStatus(`Could not load ${folder.label}`);
-  }
-}
 
 elements.refreshButton.addEventListener("click", () => {
   if (state.activeFolder) loadSharedFolder(state.activeFolder);
