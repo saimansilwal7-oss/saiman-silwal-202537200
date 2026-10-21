@@ -231,24 +231,34 @@ const STATIC_TREES = {
   ],
   "WEEK 6.1": [
     {
-      "path": "index.html",
+      "path": "01-official-joke-api.html",
       "type": "blob",
-      "size": 2200
+      "size": 8754
     },
     {
-      "path": "style.css",
+      "path": "02-jsonplaceholder.html",
       "type": "blob",
-      "size": 4300
+      "size": 8715
     },
     {
-      "path": "script.js",
+      "path": "03-open-meteo.html",
       "type": "blob",
-      "size": 4200
+      "size": 10127
     },
     {
-      "path": "README.md",
+      "path": "04-random-user.html",
       "type": "blob",
-      "size": 600
+      "size": 9210
+    },
+    {
+      "path": "05-pokeapi.html",
+      "type": "blob",
+      "size": 9380
+    },
+    {
+      "path": "06-rest-countries.html",
+      "type": "blob",
+      "size": 9854
     }
   ]
 };
