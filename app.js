@@ -260,6 +260,15 @@ const STATIC_TREES = {
       "type": "blob",
       "size": 9854
     }
+  ],
+  "WEEK 7.1": [
+    {"path":"step1_html.html","type":"blob","size":650},
+    {"path":"step2_css.html","type":"blob","size":1699},
+    {"path":"step3_dom.html","type":"blob","size":1301},
+    {"path":"step4_fetch.html","type":"blob","size":1998},
+    {"path":"step5_render.html","type":"blob","size":3152},
+    {"path":"step6_polish.html","type":"blob","size":4378},
+    {"path":"book_fetcher.html","type":"blob","size":5461}
   ]
 };
 const SHARED_FOLDERS = [
@@ -270,6 +279,7 @@ const SHARED_FOLDERS = [
   { label: "WEEK4", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK4" },
   { label: "WEEK 5", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK%205" },
   { label: "WEEK 6.1", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK%206.1" },
+  { label: "WEEK 7.1", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK%207.1" },
 ];
 
 const elements = {
