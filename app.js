@@ -274,7 +274,6 @@ const STATIC_TREES = {
     {"path":"E1_login_form.html","type":"blob","size":2314},
     {"path":"E2_validation_attributes.html","type":"blob","size":2441},
     {"path":"E3_valid_invalid_css.html","type":"blob","size":3254},
-    {"path":"E4_contact_form.html","type":"blob","size":4200},
     {"path":"student_registration_form.html","type":"blob","size":6729}
   ]
 };
