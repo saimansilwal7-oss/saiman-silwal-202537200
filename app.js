@@ -271,6 +271,9 @@ const STATIC_TREES = {
     {"path":"book_fetcher.html","type":"blob","size":5461}
   ],
   "WEEK 8.1": [
+    {"path":"E1_login_form.html","type":"blob","size":2314},
+    {"path":"E2_validation_attributes.html","type":"blob","size":2441},
+    {"path":"E3_valid_invalid_css.html","type":"blob","size":3254},
     {"path":"student_registration_form.html","type":"blob","size":6729}
   ]
 };
