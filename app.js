@@ -271,7 +271,7 @@ const STATIC_TREES = {
     {"path":"book_fetcher.html","type":"blob","size":5461}
   ],
   "WEEK 8.1": [
-    {"path":"student_registration_form.html","type":"blob","size":7000}
+    {"path":"student_registration_form.html","type":"blob","size":6729}
   ]
 };
 const SHARED_FOLDERS = [
