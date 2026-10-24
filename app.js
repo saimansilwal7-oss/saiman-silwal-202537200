@@ -261,7 +261,7 @@ const STATIC_TREES = {
       "size": 9854
     }
   ],
-  "WEEK 7.2": [
+  "WEEK 7.1": [
     {"path":"step1_html.html","type":"blob","size":650},
     {"path":"step2_css.html","type":"blob","size":1699},
     {"path":"step3_dom.html","type":"blob","size":1301},
@@ -285,7 +285,7 @@ const SHARED_FOLDERS = [
   { label: "WEEK4", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK4" },
   { label: "WEEK 5", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK%205" },
   { label: "WEEK 6.1", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK%206.1" },
-  { label: "WEEK 7.2", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK%207.2" },
+  { label: "WEEK 7.1", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK%207.1" },
   { label: "WEEK 8.1", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK%208.1" },
 ];
 
