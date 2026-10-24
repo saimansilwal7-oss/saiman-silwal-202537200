@@ -640,6 +640,14 @@ function previewHeader(path, rawUrl) {
   filename.textContent = path;
   const actions = document.createElement("div");
   actions.className = "preview-actions";
+  if (state.activeFolder?.label === "WEEK 6.1" && /\\.html?$/i.test(path)) {
+    const liveLink = document.createElement("a");
+    liveLink.href = "https://saimansilwal7-oss.github.io/saiman-silwal-202537200/live/WEEK%206.1/" + path.split("/").map(encodeURIComponent).join("/");
+    liveLink.target = "_blank";
+    liveLink.rel = "noopener noreferrer";
+    liveLink.textContent = "Run live app ↗";
+    actions.append(liveLink);
+  }
   const rawLink = document.createElement("a");
   rawLink.href = rawUrl;
   rawLink.target = "_blank";
