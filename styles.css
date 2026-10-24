@@ -264,3 +264,51 @@ button:focus-visible, a:focus-visible { outline: 3px solid #5475d8; outline-offs
 @keyframes searchDrop { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
 @media (max-width: 760px) { .archive-search { grid-template-columns: 1fr; gap: 18px; margin-bottom: 22px; } .archive-search-copy > p:last-child { max-width: none; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
+
+
+/* Live wallpaper: slow-moving aurora glow behind the portfolio */
+body {
+  position: relative;
+  isolation: isolate;
+  background-color: #eef0e7;
+  background-image:
+    linear-gradient(#5d60440b 1px, transparent 1px),
+    linear-gradient(90deg, #5d60440b 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: -18%;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 15% 25%, rgba(199, 243, 106, .48) 0, transparent 34%),
+    radial-gradient(ellipse at 82% 20%, rgba(108, 144, 255, .25) 0, transparent 32%),
+    radial-gradient(ellipse at 70% 78%, rgba(240, 120, 81, .22) 0, transparent 34%),
+    radial-gradient(ellipse at 22% 85%, rgba(92, 205, 194, .22) 0, transparent 30%);
+  background-size: 125% 125%;
+  filter: blur(18px);
+  opacity: .9;
+  transform: translate3d(0, 0, 0);
+  animation: aurora-drift 24s ease-in-out infinite alternate;
+}
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: .22;
+  background-image: radial-gradient(rgba(32, 35, 33, .42) .7px, transparent .7px);
+  background-size: 23px 23px;
+  mask-image: linear-gradient(135deg, black, transparent 72%);
+}
+@keyframes aurora-drift {
+  0% { background-position: 0% 10%; transform: translate3d(-1.5%, -1%, 0) scale(1); }
+  50% { background-position: 80% 60%; transform: translate3d(1.5%, 1%, 0) scale(1.04); }
+  100% { background-position: 20% 100%; transform: translate3d(-.5%, 1.5%, 0) scale(1.02); }
+}
+@media (prefers-reduced-motion: reduce) {
+  body::before { animation: none; }
+}
