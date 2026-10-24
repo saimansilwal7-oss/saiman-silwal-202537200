@@ -734,7 +734,7 @@ async function openFile(file) {
       const frame = document.createElement("iframe");
       frame.className = "html-frame";
       frame.title = `Preview of ${file.name}`;
-      frame.setAttribute("sandbox", "allow-scripts");
+      frame.setAttribute("sandbox", "allow-scripts allow-forms");
       const baseUrl = rawUrl.slice(0, rawUrl.lastIndexOf("/") + 1);
       const baseTag = `<base href="${escapeHtml(baseUrl)}">`;
       frame.srcdoc = /<head(?:\s[^>]*)?>/i.test(text)
