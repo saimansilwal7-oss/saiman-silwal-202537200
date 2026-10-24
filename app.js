@@ -1,4 +1,3 @@
-const API_ROOT = "https://api.github.com";
 const RAW_ROOT = "https://raw.githubusercontent.com";
 const MAX_PREVIEW_BYTES = 2 * 1024 * 1024;
 const STATIC_TREES = {
@@ -233,48 +232,92 @@ const STATIC_TREES = {
     {
       "path": "01-official-joke-api.html",
       "type": "blob",
-      "size": 8754
+      "size": 8772
     },
     {
       "path": "02-jsonplaceholder.html",
       "type": "blob",
-      "size": 8715
+      "size": 8734
     },
     {
       "path": "03-open-meteo.html",
       "type": "blob",
-      "size": 10127
+      "size": 10156
     },
     {
       "path": "04-random-user.html",
       "type": "blob",
-      "size": 9210
+      "size": 9229
     },
     {
       "path": "05-pokeapi.html",
       "type": "blob",
-      "size": 9380
+      "size": 9407
     },
     {
       "path": "06-rest-countries.html",
       "type": "blob",
-      "size": 9854
+      "size": 10073
     }
   ],
   "WEEK 7.1": [
-    {"path":"step1_html.html","type":"blob","size":650},
-    {"path":"step2_css.html","type":"blob","size":1699},
-    {"path":"step3_dom.html","type":"blob","size":1301},
-    {"path":"step4_fetch.html","type":"blob","size":1998},
-    {"path":"step5_render.html","type":"blob","size":3152},
-    {"path":"step6_polish.html","type":"blob","size":4378},
-    {"path":"book_fetcher.html","type":"blob","size":5461}
+    {
+      "path": "step1_html.html",
+      "type": "blob",
+      "size": 658
+    },
+    {
+      "path": "step2_css.html",
+      "type": "blob",
+      "size": 1706
+    },
+    {
+      "path": "step3_dom.html",
+      "type": "blob",
+      "size": 1305
+    },
+    {
+      "path": "step4_fetch.html",
+      "type": "blob",
+      "size": 2006
+    },
+    {
+      "path": "step5_render.html",
+      "type": "blob",
+      "size": 3171
+    },
+    {
+      "path": "step6_polish.html",
+      "type": "blob",
+      "size": 4399
+    },
+    {
+      "path": "book_fetcher.html",
+      "type": "blob",
+      "size": 5479
+    }
   ],
   "WEEK 8.1": [
-    {"path":"E1_login_form.html","type":"blob","size":2314},
-    {"path":"E2_validation_attributes.html","type":"blob","size":2441},
-    {"path":"E3_valid_invalid_css.html","type":"blob","size":3254},
-    {"path":"student_registration_form.html","type":"blob","size":6729}
+    {
+      "path": "E1_login_form.html",
+      "type": "blob",
+      "size": 2316
+    },
+    {
+      "path": "E2_validation_attributes.html",
+      "type": "blob",
+      "size": 2443
+    },
+    {
+      "path": "E3_valid_invalid_css.html",
+      "type": "blob",
+      "size": 3254
+    },
+    {
+      "path": "student_registration_form.html",
+      "type": "blob",
+      "size": 6731
+    }
   ]
 };
 const SHARED_FOLDERS = [
@@ -324,22 +367,6 @@ function setStatus(message, tone = "muted") {
   dot.className = `status-dot${tone === "muted" ? " muted" : ""}`;
   const text = document.createTextNode(message);
   elements.status.append(dot, text);
-}
-
-async function apiGet(url) {
-  const response = await fetch(url, { headers: { Accept: "application/vnd.github+json" } });
-  if (!response.ok) {
-    let message = `GitHub returned ${response.status}.`;
-    try {
-      const details = await response.json();
-      if (details.message) message = details.message;
-    } catch { /* Keep the status-based message. */ }
-    if (response.status === 403 && response.headers.get("X-RateLimit-Remaining") === "0") {
-      message = "GitHub's public API limit has been reached. Try again later.";
-    }
-    throw new Error(message);
-  }
-  return response.json();
 }
 
 function showError(container, message) {
