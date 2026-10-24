@@ -257,7 +257,7 @@ const STATIC_TREES = {
     {
       "path": "06-rest-countries.html",
       "type": "blob",
-      "size": 10073
+      "size": 9965
     }
   ],
   "WEEK 7.1": [
