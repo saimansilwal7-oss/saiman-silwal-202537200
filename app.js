@@ -295,6 +295,11 @@ const STATIC_TREES = {
       "path": "book_fetcher.html",
       "type": "blob",
       "size": 5479
+    },
+    {
+      "path": "book_library.html",
+      "type": "blob",
+      "size": 17712
     }
   ],
   "WEEK 8.1": [
