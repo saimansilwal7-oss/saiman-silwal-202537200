@@ -645,9 +645,14 @@ function previewHeader(path, rawUrl) {
   filename.textContent = path;
   const actions = document.createElement("div");
   actions.className = "preview-actions";
-  if (state.activeFolder?.label === "WEEK 6.1" && /\\.html?$/i.test(path)) {
+  const folderLabel = state.activeFolder?.label;
+  const isHtml = /\.html?$/i.test(path);
+  const isWeekSixLive = folderLabel === "WEEK 6.1" && isHtml;
+  const isWeekSevenLive = folderLabel === "WEEK 7.1" && /^(book_fetcher|book_library)\.html$/i.test(path);
+  if (isWeekSixLive || isWeekSevenLive) {
     const liveLink = document.createElement("a");
-    liveLink.href = "https://saimansilwal7-oss.github.io/saiman-silwal-202537200/live/WEEK%206.1/" + path.split("/").map(encodeURIComponent).join("/");
+    const liveFolder = folderLabel === "WEEK 6.1" ? "WEEK%206.1" : "WEEK%207.1";
+    liveLink.href = "https://saimansilwal7-oss.github.io/saiman-silwal-202537200/live/" + liveFolder + "/" + path.split("/").map(encodeURIComponent).join("/");
     liveLink.target = "_blank";
     liveLink.rel = "noopener noreferrer";
     liveLink.textContent = "Run live app ↗";
@@ -857,5 +862,72 @@ elements.refreshButton.addEventListener("click", () => {
   if (state.activeFolder) loadSharedFolder(state.activeFolder);
 });
 
+function initAssignmentSearch() {
+  const input = document.querySelector("#assignment-search");
+  const results = document.querySelector("#assignment-search-results");
+  if (!input || !results) return;
+  let lastMatches = [];
+  const search = () => {
+    const query = input.value.trim().toLowerCase();
+    results.replaceChildren();
+    lastMatches = [];
+    if (!query) {
+      results.classList.remove("is-open");
+      results.setAttribute("aria-label", "No search results");
+      return;
+    }
+    for (const folder of SHARED_FOLDERS) {
+      const entries = STATIC_TREES[folder.label] || [];
+      for (const entry of entries) {
+        const searchable = (entry.path + " " + folder.label).toLowerCase();
+        if (searchable.includes(query)) lastMatches.push({ folder, entry });
+      }
+    }
+    const heading = document.createElement("p");
+    heading.className = "search-result-count";
+    heading.textContent = lastMatches.length
+      ? `${lastMatches.length} matching file${lastMatches.length === 1 ? "" : "s"}`
+      : "No matching file names. Try a shorter keyword.";
+    results.append(heading);
+    for (const match of lastMatches.slice(0, 12)) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "assignment-result";
+      button.setAttribute("role", "listitem");
+      const name = document.createElement("strong");
+      name.textContent = match.entry.path;
+      const folderName = document.createElement("span");
+      folderName.textContent = match.folder.label;
+      const arrow = document.createElement("span");
+      arrow.className = "assignment-result-arrow";
+      arrow.textContent = "↗";
+      button.append(name, folderName, arrow);
+      button.addEventListener("click", async () => {
+        input.value = "";
+        results.replaceChildren();
+        results.classList.remove("is-open");
+        await loadSharedFolder(match.folder);
+        const file = { ...match.entry };
+        openFile(file);
+        document.querySelector(".file-workspace")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+      results.append(button);
+    }
+    results.classList.add("is-open");
+    results.setAttribute("aria-label", "Assignment search results");
+  };
+  input.addEventListener("input", search);
+  input.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      input.value = "";
+      results.replaceChildren();
+      results.classList.remove("is-open");
+    }
+  });
+  document.addEventListener("click", (event) => {
+    if (!event.target.closest(".archive-search")) results.classList.remove("is-open");
+  });
+}
 renderSharedFolders();
+initAssignmentSearch();
 loadSharedFolder(SHARED_FOLDERS[0]);
