@@ -324,6 +324,13 @@ const STATIC_TREES = {
       "size": 6731
     }
   ],
+  "WEEK 8.2": [
+    {
+      "path": "homework_registration_validation.html",
+      "type": "blob",
+      "size": 7800
+    }
+  ],
 };
 const SHARED_FOLDERS = [
   { label: "WEEK 1", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK%201" },
@@ -335,6 +342,7 @@ const SHARED_FOLDERS = [
   { label: "WEEK 6.1", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK%206.1" },
   { label: "WEEK 7.1", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK%207.1" },
   { label: "WEEK 8.1", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK%208.1" },
+  { label: "WEEK 8.2", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK%208.2" },
 ];
 
 const elements = {
