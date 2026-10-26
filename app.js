@@ -323,7 +323,7 @@ const STATIC_TREES = {
       "type": "blob",
       "size": 6731
     }
-  ]
+  ],
   "PROPOSAL": [
     {
       "path": "index.html",
