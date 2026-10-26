@@ -553,3 +553,27 @@ body::after {
   .proposal-card-copy { flex-basis: calc(100% - 64px); }
   .proposal-card-button { margin-left: 64px; }
 }
+
+
+/* Standalone proposal area, separate from the folders browser like the contact section */
+.proposal-section {
+  margin: 30px 0 42px;
+  padding: clamp(22px, 5vw, 48px);
+  display: grid;
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+  align-items: center;
+  gap: clamp(24px, 5vw, 58px);
+  border: 1px solid rgba(157, 174, 255, .28);
+  background: linear-gradient(145deg, rgba(13, 19, 40, .97), rgba(20, 25, 53, .97));
+  box-shadow: 7px 7px 0 #11172b;
+}
+.proposal-heading .eyebrow { color: #9df3e3; line-height: 1.7; }
+.proposal-heading h2 { margin: 8px 0 12px; color: #f5f4ff; font: 800 clamp(34px, 4.5vw, 52px)/1.05 var(--display); letter-spacing: -1.5px; }
+.proposal-heading h2 span { color: #9df3e3; }
+.proposal-heading > p:last-child { max-width: 340px; color: #b5c0df; font-size: 13px; line-height: 1.75; }
+.proposal-section .proposal-card { min-width: 0; margin: 0; padding: clamp(20px, 3vw, 30px); box-shadow: none; background: linear-gradient(145deg, rgba(31, 42, 80, .98), rgba(46, 42, 87, .98)); }
+.proposal-section .proposal-card-copy h2 { font-size: clamp(18px, 2vw, 24px); }
+@media (max-width: 760px) {
+  .proposal-section { grid-template-columns: 1fr; }
+  .proposal-heading { position: static; }
+}
