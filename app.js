@@ -352,8 +352,9 @@ const STATIC_TREES = {
     { "path": "Screenshots/lighthouse-before.png", "type": "blob", "size": 1340292 },
     { "path": "Screenshots/lighthouse-errors.png", "type": "blob", "size": 34916 },
     { "path": "Screenshots/lighthouse-temporary-check.png", "type": "blob", "size": 1386221 },
-    { "path": "txt.html", "type": "blob", "size": 1 }
-  ],
+    { "path": "txt.html", "type": "blob", "size": 1 },
+    { "path": "optimized-index.html", "type": "blob", "size": 2552 }
+  ]
 
 };
 const SHARED_FOLDERS = [
