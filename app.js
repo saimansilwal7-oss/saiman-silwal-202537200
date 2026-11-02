@@ -333,10 +333,10 @@ const STATIC_TREES = {
   ],
   "WEEK 9.1": [
     { "path": "README.md", "type": "blob", "size": 1132 },
-    { "path": "accessibility_audit.html", "type": "blob", "size": 4200 },
-    { "path": "audit_report_template.md", "type": "blob", "size": 1000 },
-    { "path": "skip_link_demo.html", "type": "blob", "size": 2200 }
-  ],
+    { "path": "accessibility_audit_report.html", "type": "blob", "size": 4827 },
+    { "path": "audit_fixes_checklist.md", "type": "blob", "size": 1799 },
+    { "path": "skip_link_demo.html", "type": "blob", "size": 1909 }
+  ]
 };
 const SHARED_FOLDERS = [
   { label: "WEEK 1", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK%201" },
@@ -664,10 +664,9 @@ function previewHeader(path, rawUrl) {
   const isHtml = /\.html?$/i.test(path);
   const isWeekSixLive = folderLabel === "WEEK 6.1" && isHtml;
   const isWeekSevenLive = folderLabel === "WEEK 7.1" && /^(book_fetcher|book_library)\.html$/i.test(path);
-  const isWeekNineLive = folderLabel === "WEEK 9.1" && /^(accessibility_audit|skip_link_demo)\\.html$/i.test(path);
-  if (isWeekSixLive || isWeekSevenLive || isWeekNineLive) {
+  if (isWeekSixLive || isWeekSevenLive) {
     const liveLink = document.createElement("a");
-    const liveFolder = folderLabel === "WEEK 6.1" ? "WEEK%206.1" : folderLabel === "WEEK 7.1" ? "WEEK%207.1" : "WEEK%209.1";
+    const liveFolder = folderLabel === "WEEK 6.1" ? "WEEK%206.1" : "WEEK%207.1";
     liveLink.href = "https://saimansilwal7-oss.github.io/saiman-silwal-202537200/live/" + liveFolder + "/" + path.split("/").map(encodeURIComponent).join("/");
     liveLink.target = "_blank";
     liveLink.rel = "noopener noreferrer";
