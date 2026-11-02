@@ -331,6 +331,16 @@ const STATIC_TREES = {
       "size": 7800
     }
   ],
+  "Week 9.1": [
+    { "path": "Accessibility Audit Report.html", "type": "blob", "size": 5200 },
+    { "path": "Alt text.html", "type": "blob", "size": 5000 },
+    { "path": "Initial screenshot.png", "type": "blob", "size": 431378 },
+    { "path": "div button.html", "type": "blob", "size": 3000 },
+    { "path": "final ss.png", "type": "blob", "size": 443465 },
+    { "path": "initial screenshot1.png", "type": "blob", "size": 441080 },
+    { "path": "lighthouse fix.html", "type": "blob", "size": 4000 },
+    { "path": "txt.html", "type": "blob", "size": 1 }
+  ],
 
 };
 const SHARED_FOLDERS = [
@@ -343,7 +353,8 @@ const SHARED_FOLDERS = [
   { label: "WEEK 6.1", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK%206.1" },
   { label: "WEEK 7.1", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK%207.1" },
   { label: "WEEK 8.1", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK%208.1" },
-  { label: "WEEK 8.2", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK%208.2" },];
+  { label: "WEEK 8.2", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK%208.2" },
+  { label: "Week 9.1", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/Week%209.1" },];
 
 const elements = {
   repoContext: document.querySelector("#repo-context"),
