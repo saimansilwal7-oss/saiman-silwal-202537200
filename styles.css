@@ -577,3 +577,10 @@ body::after {
   .proposal-section { grid-template-columns: 1fr; }
   .proposal-heading { position: static; }
 }
+
+
+/* Week 9.1 accessibility: visible keyboard skip navigation and focus. */
+.skip-link{position:absolute;top:-5rem;left:1rem;z-index:1000;padding:.8rem 1rem;background:#202321;color:#fff;border:2px solid #c7f36a;font-weight:700;text-decoration:none}
+.skip-link:focus{top:1rem}
+:focus-visible{outline:3px solid #456523;outline-offset:3px}
+#main-content:focus{outline:none}
