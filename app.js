@@ -332,13 +332,13 @@ const STATIC_TREES = {
     }
   ],
   "Week 9.1": [
-    { "path": "Accessibility Audit Report.html", "type": "blob", "size": 5200 },
-    { "path": "Alt text.html", "type": "blob", "size": 5000 },
+    { "path": "Accessibility Audit Report.html", "type": "blob", "size": 5861 },
+    { "path": "Alt text.html", "type": "blob", "size": 6066 },
     { "path": "Initial screenshot.png", "type": "blob", "size": 431378 },
-    { "path": "div button.html", "type": "blob", "size": 3000 },
+    { "path": "div button.html", "type": "blob", "size": 2175 },
     { "path": "final ss.png", "type": "blob", "size": 443465 },
     { "path": "initial screenshot1.png", "type": "blob", "size": 441080 },
-    { "path": "lighthouse fix.html", "type": "blob", "size": 4000 },
+    { "path": "lighthouse fix.html", "type": "blob", "size": 5010 },
     { "path": "txt.html", "type": "blob", "size": 1 }
   ],
 
