@@ -331,15 +331,7 @@ const STATIC_TREES = {
       "size": 7800
     }
   ],
-  "WEEK 9.1": [
-    { "path": "README.md", "type": "blob", "size": 1114 },
-    { "path": "SCREENSHOTS", "type": "tree", "size": 0 },
-    { "path": "SCREENSHOTS/README.md", "type": "blob", "size": 400 },
-    { "path": "team-project-accessibility-patch.md", "type": "blob", "size": 0 },
-    { "path": "accessibility_audit_report.html", "type": "blob", "size": 4827 },
-    { "path": "audit_fixes_checklist.md", "type": "blob", "size": 1799 },
-    { "path": "skip_link_demo.html", "type": "blob", "size": 1909 }
-  ]
+
 };
 const SHARED_FOLDERS = [
   { label: "WEEK 1", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK%201" },
