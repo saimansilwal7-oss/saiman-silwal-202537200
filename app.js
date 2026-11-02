@@ -688,7 +688,7 @@ const STATIC_TREES = {
     { "path": "Adding defer.html", "type": "blob", "size": 1060 },
     { "path": "analytics.js", "type": "blob", "size": 300 },
     { "path": "app.js", "type": "blob", "size": 230 },
-    { "path": "performance report.html", "type": "blob", "size": 12709 },
+    { "path": "performance report.html", "type": "blob", "size": 9564 },
     { "path": "performance test place.html", "type": "blob", "size": 1022 },
     { "path": "Screenshots/Txt.html", "type": "blob", "size": 1 },
     { "path": "Screenshots/lighthouse-after.png", "type": "blob", "size": 389193 },
