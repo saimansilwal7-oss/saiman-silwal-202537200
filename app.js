@@ -341,6 +341,349 @@ const STATIC_TREES = {
     { "path": "lighthouse fix.html", "type": "blob", "size": 5010 },
     { "path": "txt.html", "type": "blob", "size": 1 }
   ],
+  t RAW_ROOT = "https://raw.githubusercontent.com";
+const MAX_PREVIEW_BYTES = 2 * 1024 * 1024;
+const STATIC_TREES = {
+  "WEEK 1": [
+    {
+      "path": "EX-1.html",
+      "type": "blob",
+      "size": 235
+    },
+    {
+      "path": "EX-2.html",
+      "type": "blob",
+      "size": 724
+    },
+    {
+      "path": "EX-3.html",
+      "type": "blob",
+      "size": 1312
+    },
+    {
+      "path": "EX-4.html",
+      "type": "blob",
+      "size": 424
+    },
+    {
+      "path": "EX-5.html",
+      "type": "blob",
+      "size": 1013
+    },
+    {
+      "path": "EX-6.html",
+      "type": "blob",
+      "size": 696
+    },
+    {
+      "path": "EX-7.html",
+      "type": "blob",
+      "size": 1385
+    },
+    {
+      "path": "EX-8.html",
+      "type": "blob",
+      "size": 2118
+    },
+    {
+      "path": "TEMP.TXT",
+      "type": "blob",
+      "size": 1
+    }
+  ],
+  "WEEK2": [
+    {
+      "path": "ACTIVITY",
+      "type": "blob",
+      "size": 1
+    },
+    {
+      "path": "TASK 1.html",
+      "type": "blob",
+      "size": 509
+    },
+    {
+      "path": "TASK2.html",
+      "type": "blob",
+      "size": 1618
+    },
+    {
+      "path": "TASK3.html",
+      "type": "blob",
+      "size": 997
+    },
+    {
+      "path": "TASK4.html",
+      "type": "blob",
+      "size": 922
+    },
+    {
+      "path": "TASK5.html",
+      "type": "blob",
+      "size": 4063
+    },
+    {
+      "path": "TASK6.html",
+      "type": "blob",
+      "size": 485
+    },
+    {
+      "path": "TASK7.html",
+      "type": "blob",
+      "size": 1007
+    },
+    {
+      "path": "TASK8.html",
+      "type": "blob",
+      "size": 4513
+    }
+  ],
+  "WEEK3": [
+    {
+      "path": "E1",
+      "type": "blob",
+      "size": 114
+    },
+    {
+      "path": "E2",
+      "type": "blob",
+      "size": 532
+    },
+    {
+      "path": "E3",
+      "type": "blob",
+      "size": 941
+    },
+    {
+      "path": "E4",
+      "type": "blob",
+      "size": 757
+    },
+    {
+      "path": "E5",
+      "type": "blob",
+      "size": 647
+    },
+    {
+      "path": "E6",
+      "type": "blob",
+      "size": 1031
+    },
+    {
+      "path": "E7",
+      "type": "blob",
+      "size": 2172
+    },
+    {
+      "path": "E8",
+      "type": "blob",
+      "size": 6116
+    },
+    {
+      "path": "TXT.html",
+      "type": "blob",
+      "size": 1
+    }
+  ],
+  "WEEK3.2": [
+    {
+      "path": "E1",
+      "type": "blob",
+      "size": 919
+    },
+    {
+      "path": "E2",
+      "type": "blob",
+      "size": 471
+    },
+    {
+      "path": "E3",
+      "type": "blob",
+      "size": 471
+    },
+    {
+      "path": "E4",
+      "type": "blob",
+      "size": 939
+    },
+    {
+      "path": "E5",
+      "type": "blob",
+      "size": 1197
+    },
+    {
+      "path": "E6",
+      "type": "blob",
+      "size": 1349
+    },
+    {
+      "path": "E7",
+      "type": "blob",
+      "size": 3011
+    }
+  ],
+  "WEEK4": [
+    {
+      "path": "E1",
+      "type": "blob",
+      "size": 816
+    },
+    {
+      "path": "E2",
+      "type": "blob",
+      "size": 1130
+    },
+    {
+      "path": "E3",
+      "type": "blob",
+      "size": 1967
+    },
+    {
+      "path": "E4",
+      "type": "blob",
+      "size": 1555
+    },
+    {
+      "path": "HTNL.TXT",
+      "type": "blob",
+      "size": 1
+    }
+  ],
+  "WEEK 5": [
+    {
+      "path": "Complete mini-app",
+      "type": "blob",
+      "size": 1815
+    },
+    {
+      "path": "Conditions(if_else)",
+      "type": "blob",
+      "size": 1175
+    },
+    {
+      "path": "Loops",
+      "type": "blob",
+      "size": 925
+    },
+    {
+      "path": "txt.html",
+      "type": "blob",
+      "size": 1
+    }
+  ],
+  "WEEK 6.1": [
+    {
+      "path": "01-official-joke-api.html",
+      "type": "blob",
+      "size": 8772
+    },
+    {
+      "path": "02-jsonplaceholder.html",
+      "type": "blob",
+      "size": 8734
+    },
+    {
+      "path": "03-open-meteo.html",
+      "type": "blob",
+      "size": 10156
+    },
+    {
+      "path": "04-random-user.html",
+      "type": "blob",
+      "size": 9229
+    },
+    {
+      "path": "05-pokeapi.html",
+      "type": "blob",
+      "size": 9407
+    },
+    {
+      "path": "06-rest-countries.html",
+      "type": "blob",
+      "size": 9965
+    }
+  ],
+  "WEEK 7.1": [
+    {
+      "path": "step1_html.html",
+      "type": "blob",
+      "size": 658
+    },
+    {
+      "path": "step2_css.html",
+      "type": "blob",
+      "size": 1706
+    },
+    {
+      "path": "step3_dom.html",
+      "type": "blob",
+      "size": 1305
+    },
+    {
+      "path": "step4_fetch.html",
+      "type": "blob",
+      "size": 2006
+    },
+    {
+      "path": "step5_render.html",
+      "type": "blob",
+      "size": 3171
+    },
+    {
+      "path": "step6_polish.html",
+      "type": "blob",
+      "size": 4399
+    },
+    {
+      "path": "book_fetcher.html",
+      "type": "blob",
+      "size": 5479
+    },
+    {
+      "path": "book_library.html",
+      "type": "blob",
+      "size": 17712
+    }
+  ],
+  "WEEK 8.1": [
+    {
+      "path": "E1_login_form.html",
+      "type": "blob",
+      "size": 2316
+    },
+    {
+      "path": "E2_validation_attributes.html",
+      "type": "blob",
+      "size": 2443
+    },
+    {
+      "path": "E3_valid_invalid_css.html",
+      "type": "blob",
+      "size": 3254
+    },
+    {
+      "path": "student_registration_form.html",
+      "type": "blob",
+      "size": 6731
+    }
+  ],
+  "WEEK 8.2": [
+    {
+      "path": "homework_registration_validation.html",
+      "type": "blob",
+      "size": 7800
+    }
+  ],
+  "Week 9.1": [
+    { "path": "Accessibility Audit Report.html", "type": "blob", "size": 5861 },
+    { "path": "Alt text.html", "type": "blob", "size": 6066 },
+    { "path": "Initial screenshot.png", "type": "blob", "size": 431378 },
+    { "path": "div button.html", "type": "blob", "size": 2175 },
+    { "path": "final ss.png", "type": "blob", "size": 443465 },
+    { "path": "initial screenshot1.png", "type": "blob", "size": 441080 },
+    { "path": "lighthouse fix.html", "type": "blob", "size": 5010 },
+    { "path": "txt.html", "type": "blob", "size": 1 }
+  ],
   "Week 9.2": [
     { "path": "Adding defer.html", "type": "blob", "size": 1060 },
     { "path": "analytics.js", "type": "blob", "size": 300 },
