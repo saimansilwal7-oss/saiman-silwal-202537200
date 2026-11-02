@@ -696,7 +696,10 @@ const STATIC_TREES = {
     { "path": "Screenshots/lighthouse-errors.png", "type": "blob", "size": 34916 },
     { "path": "Screenshots/lighthouse-temporary-check.png", "type": "blob", "size": 1386221 },
     { "path": "txt.html", "type": "blob", "size": 1 },
-    { "path": "optimized-index.html", "type": "blob", "size": 2552 }
+    { "path": "optimized-index.html", "type": "blob", "size": 2552 },
+    { "path": "optimized-app.js", "type": "blob", "size": 4281 },
+    { "path": "optimized-style.css", "type": "blob", "size": 7318 },
+    { "path": "optimization-patches.md", "type": "blob", "size": 1641 }
   ]
 
 };
