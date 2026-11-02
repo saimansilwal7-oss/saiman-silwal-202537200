@@ -341,6 +341,19 @@ const STATIC_TREES = {
     { "path": "lighthouse fix.html", "type": "blob", "size": 5010 },
     { "path": "txt.html", "type": "blob", "size": 1 }
   ],
+  "Week 9.2": [
+    { "path": "Adding defer.html", "type": "blob", "size": 1060 },
+    { "path": "analytics.js", "type": "blob", "size": 300 },
+    { "path": "app.js", "type": "blob", "size": 230 },
+    { "path": "performance report.html", "type": "blob", "size": 12709 },
+    { "path": "performance test place.html", "type": "blob", "size": 1022 },
+    { "path": "Screenshots/Txt.html", "type": "blob", "size": 1 },
+    { "path": "Screenshots/lighthouse-after.png", "type": "blob", "size": 389193 },
+    { "path": "Screenshots/lighthouse-before.png", "type": "blob", "size": 1340292 },
+    { "path": "Screenshots/lighthouse-errors.png", "type": "blob", "size": 34916 },
+    { "path": "Screenshots/lighthouse-temporary-check.png", "type": "blob", "size": 1386221 },
+    { "path": "txt.html", "type": "blob", "size": 1 }
+  ],
 
 };
 const SHARED_FOLDERS = [
@@ -354,7 +367,8 @@ const SHARED_FOLDERS = [
   { label: "WEEK 7.1", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK%207.1" },
   { label: "WEEK 8.1", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK%208.1" },
   { label: "WEEK 8.2", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK%208.2" },
-  { label: "Week 9.1", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/Week%209.1" },];
+  { label: "Week 9.1", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/Week%209.1" },
+  { label: "Week 9.2", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/Week%209.2" },];
 
 const elements = {
   repoContext: document.querySelector("#repo-context"),
