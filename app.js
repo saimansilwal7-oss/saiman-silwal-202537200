@@ -325,11 +325,12 @@ const STATIC_TREES = {
     }
   ],
   "WEEK 8.2": [
-    {
-      "path": "homework_registration_validation.html",
-      "type": "blob",
-      "size": 7800
-    }
+    { "path": "C1.html", "type": "blob", "size": 2096 },
+    { "path": "C2.html", "type": "blob", "size": 4019 },
+    { "path": "E1.html", "type": "blob", "size": 1926 },
+    { "path": "E2.html", "type": "blob", "size": 2246 },
+    { "path": "E3.html", "type": "blob", "size": 3626 },
+    { "path": "homework_registration_validation.html", "type": "blob", "size": 7772 }
   ],
   "Week 9.1": [
     { "path": "Accessibility Audit Report.html", "type": "blob", "size": 5861 },
