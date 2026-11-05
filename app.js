@@ -333,17 +333,15 @@ const STATIC_TREES = {
     { "path": "homework_registration_validation.html", "type": "blob", "size": 7772 }
   ],
     "Week 9.1": [
-    { "path": "README.md", "type": "blob", "size": 278 },
-    { "path": "index.html", "type": "blob", "size": 2190 },
-    { "path": "style.css", "type": "blob", "size": 1350 },
-    { "path": "assets/latest-score-summary.svg", "type": "blob", "size": 1450 }
+    { "path": "index.html", "type": "blob", "size": 1800 },
+    { "path": "audit-evidence.html", "type": "blob", "size": 900 }
   ],
   "Week 9.2": [
-    { "path": "README.md", "type": "blob", "size": 320 },
-    { "path": "index.html", "type": "blob", "size": 2850 },
-    { "path": "style.css", "type": "blob", "size": 1500 },
-    { "path": "assets/latest-score-summary.svg", "type": "blob", "size": 1450 },
-    { "path": "assets/performance-metrics.svg", "type": "blob", "size": 1250 }
+    { "path": "index.html", "type": "blob", "size": 2200 },
+    { "path": "latest-report-summary.html", "type": "blob", "size": 800 },
+    { "path": "optimized-demo.html", "type": "blob", "size": 1300 },
+    { "path": "optimized-demo.js", "type": "blob", "size": 1500 },
+    { "path": "optimization-notes.md", "type": "blob", "size": 900 }
   ]
 
 };
