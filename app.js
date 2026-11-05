@@ -357,7 +357,7 @@ const STATIC_TREES = {
     { "path": "optimized-index.html", "type": "blob", "size": 3188 },
     { "path": "optimized-app.js", "type": "blob", "size": 4281 },
     { "path": "optimized-style.css", "type": "blob", "size": 7318 },
-    { "path": "optimization-patches.md", "type": "blob", "size": 1641 }
+    { "path": "optimization-patches.md", "type": "blob", "size": 2356 }
   ]
 
 };
