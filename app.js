@@ -704,6 +704,26 @@ function previewHeader(path, rawUrl) {
     liveLink.textContent = "Run live app ↗";
     actions.append(liveLink);
   }
+
+  // Week 9 source files stay readable, with a one-tap route to their runnable HTML demo.
+  const weekNineDemos = {
+    "optimized-demo.js": "optimized-demo.html",
+    "optimized-app.js": "optimized-index.html",
+    "optimized-style.css": "optimized-index.html"
+  };
+  if ((folderLabel === "Week 9.1" || folderLabel === "Week 9.2") && weekNineDemos[path.split("/").pop()]) {
+    const demoPath = weekNineDemos[path.split("/").pop()];
+    const runButton = document.createElement("button");
+    runButton.type = "button";
+    runButton.className = "preview-run-button";
+    runButton.textContent = "Run related demo ↗";
+    runButton.addEventListener("click", () => {
+      const demoEntry = state.treeByPath.get(demoPath);
+      if (demoEntry) openFile(demoEntry);
+      else showPreviewMessage("The paired demo HTML file is not available in this folder.");
+    });
+    actions.append(runButton);
+  }
   const rawLink = document.createElement("a");
   rawLink.href = rawUrl;
   rawLink.target = "_blank";
