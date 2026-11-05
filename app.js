@@ -333,15 +333,19 @@ const STATIC_TREES = {
     { "path": "homework_registration_validation.html", "type": "blob", "size": 7772 }
   ],
     "Week 9.1": [
-    { "path": "index.html", "type": "blob", "size": 1800 },
-    { "path": "audit-evidence.html", "type": "blob", "size": 900 }
+    { "path": "index.html", "type": "blob", "size": 2348 },
+    { "path": "audit-evidence.html", "type": "blob", "size": 883 },
+    { "path": "Week9-1_Overall-Report-Scores.png", "type": "blob", "size": 133225 },
+    { "path": "Week9-1_Accessibility-100.png", "type": "blob", "size": 166756 }
   ],
   "Week 9.2": [
-    { "path": "index.html", "type": "blob", "size": 2200 },
-    { "path": "latest-report-summary.html", "type": "blob", "size": 800 },
-    { "path": "optimized-demo.html", "type": "blob", "size": 1300 },
-    { "path": "optimized-demo.js", "type": "blob", "size": 1500 },
-    { "path": "optimization-notes.md", "type": "blob", "size": 900 }
+    { "path": "index.html", "type": "blob", "size": 2508 },
+    { "path": "latest-report-summary.html", "type": "blob", "size": 948 },
+    { "path": "optimized-demo.html", "type": "blob", "size": 1708 },
+    { "path": "optimized-demo.js", "type": "blob", "size": 1543 },
+    { "path": "optimization-notes.md", "type": "blob", "size": 1148 },
+    { "path": "Week9-2_Overall-Performance-99.png", "type": "blob", "size": 133225 },
+    { "path": "Week9-2_Performance-Metrics.png", "type": "blob", "size": 259205 }
   ]
 
 };
