@@ -349,7 +349,7 @@ const STATIC_TREES = {
     { "path": "Screenshots/lighthouse-temporary-check.png", "type": "blob", "size": 1386221 },
     { "path": "analytics.js", "type": "blob", "size": 584 },
     { "path": "app.js", "type": "blob", "size": 206 },
-    { "path": "performance report.html", "type": "blob", "size": 11423 },
+    { "path": "performance report.html", "type": "blob", "size": 11475 },
     { "path": "performance test place.html", "type": "blob", "size": 2214 },
     { "path": "optimized-index.html", "type": "blob", "size": 3197 },
     { "path": "optimized-app.js", "type": "blob", "size": 4653 },
