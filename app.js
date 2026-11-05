@@ -963,6 +963,21 @@ function initAssignmentSearch() {
     if (!event.target.closest(".archive-search")) results.classList.remove("is-open");
   });
 }
+document.querySelectorAll("[data-open-week][data-open-file]").forEach((button) => {
+  button.addEventListener("click", async () => {
+    const folder = SHARED_FOLDERS.find((item) => item.label === button.dataset.openWeek);
+    if (!folder) return;
+    await loadSharedFolder(folder);
+    const entry = (STATIC_TREES[folder.label] || []).find((item) => item.path === button.dataset.openFile);
+    if (!entry) {
+      setStatus("The selected report is not in the saved folder index.");
+      return;
+    }
+    openFile({ ...entry });
+    document.querySelector(".file-workspace")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+});
+
 renderSharedFolders();
 initAssignmentSearch();
 loadSharedFolder(SHARED_FOLDERS[0]);
