@@ -341,7 +341,7 @@ const STATIC_TREES = {
     { "path": "initial screenshot1.png", "type": "blob", "size": 441080 },
     { "path": "lighthouse fix.html", "type": "blob", "size": 5350 }
   ],
-  "Week 9.2":": [
+  "Week 9.2": [
     { "path": "Adding defer.html", "type": "blob", "size": 1510 },
     { "path": "Screenshots/lighthouse-after.png", "type": "blob", "size": 389193 },
     { "path": "Screenshots/lighthouse-before.png", "type": "blob", "size": 1340292 },
