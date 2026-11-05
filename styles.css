@@ -137,6 +137,9 @@ button { color: inherit; }
 .preview-actions { display: flex; gap: 10px; flex: 0 0 auto; }
 .preview-actions a { color: #b64e32; font: 10px var(--mono); text-decoration: none; }
 .preview-actions a:hover { text-decoration: underline; }
+.preview-actions .preview-run-button { padding: 0; border: 0; background: transparent; color: #236c4b; font: 700 10px var(--mono); cursor: pointer; }
+.preview-actions .preview-run-button:hover { text-decoration: underline; }
+.preview-actions .preview-run-button:focus-visible { outline: 2px solid #236c4b; outline-offset: 3px; }
 .preview-content { min-width: 0; padding: 22px; animation: enter .25s ease both; }
 .markdown-content { max-width: 760px; margin: 0 auto; color: #343a33; font-size: 14px; line-height: 1.75; overflow-wrap: anywhere; }
 .markdown-content h1, .markdown-content h2, .markdown-content h3 { font-family: var(--display); line-height: 1.2; }
