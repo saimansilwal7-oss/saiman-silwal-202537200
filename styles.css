@@ -578,4 +578,16 @@ body::after {
   .proposal-heading { position: static; }
 }
 
-
+/* Keep the folder sidebar bounded and make its file list independently scrollable */
+.browser-body { min-height: 0; }
+.file-sidebar { min-height: 0; height: 100%; overflow: hidden; }
+.file-tree {
+  flex: 1 1 0;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-gutter: stable;
+}
+.file-tree:focus-within { outline: 2px solid rgba(157, 243, 227, .55); outline-offset: -2px; }
