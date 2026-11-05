@@ -333,28 +333,17 @@ const STATIC_TREES = {
     { "path": "homework_registration_validation.html", "type": "blob", "size": 7772 }
   ],
     "Week 9.1": [
-    { "path": "Accessibility Audit Report.html", "type": "blob", "size": 7636 },
-    { "path": "Alt text.html", "type": "blob", "size": 6376 },
-    { "path": "Initial screenshot.png", "type": "blob", "size": 431378 },
-    { "path": "div button.html", "type": "blob", "size": 2477 },
-    { "path": "final ss.png", "type": "blob", "size": 443465 },
-    { "path": "initial screenshot1.png", "type": "blob", "size": 441080 },
-    { "path": "lighthouse fix.html", "type": "blob", "size": 5350 }
+    { "path": "README.md", "type": "blob", "size": 278 },
+    { "path": "index.html", "type": "blob", "size": 2190 },
+    { "path": "style.css", "type": "blob", "size": 1350 },
+    { "path": "assets/latest-score-summary.svg", "type": "blob", "size": 1450 }
   ],
   "Week 9.2": [
-    { "path": "Adding defer.html", "type": "blob", "size": 1510 },
-    { "path": "Screenshots/lighthouse-after.png", "type": "blob", "size": 389193 },
-    { "path": "Screenshots/lighthouse-before.png", "type": "blob", "size": 1340292 },
-    { "path": "Screenshots/lighthouse-errors.png", "type": "blob", "size": 34916 },
-    { "path": "Screenshots/lighthouse-temporary-check.png", "type": "blob", "size": 1386221 },
-    { "path": "analytics.js", "type": "blob", "size": 584 },
-    { "path": "app.js", "type": "blob", "size": 206 },
-    { "path": "performance report.html", "type": "blob", "size": 11475 },
-    { "path": "performance test place.html", "type": "blob", "size": 2214 },
-    { "path": "optimized-index.html", "type": "blob", "size": 3197 },
-    { "path": "optimized-app.js", "type": "blob", "size": 4653 },
-    { "path": "optimized-style.css", "type": "blob", "size": 7318 },
-    { "path": "optimization-patches.md", "type": "blob", "size": 2356 }
+    { "path": "README.md", "type": "blob", "size": 320 },
+    { "path": "index.html", "type": "blob", "size": 2850 },
+    { "path": "style.css", "type": "blob", "size": 1500 },
+    { "path": "assets/latest-score-summary.svg", "type": "blob", "size": 1450 },
+    { "path": "assets/performance-metrics.svg", "type": "blob", "size": 1250 }
   ]
 
 };
