@@ -46,7 +46,8 @@
     <div class="topbar-note"><span>STUDENT ID</span><strong>202537200</strong></div>
   </header>
 
-  <main class="app-shell" id="main-content" tabindex="-1">
+  <main id="main-content" tabindex="-1">
+    <div class="app-shell">
     <section class="archive-heading" aria-label="Course archive">
       <div class="archive-heading-copy">
         <p class="eyebrow">2025 / PUBLIC COURSE ARCHIVE</p>
@@ -89,7 +90,7 @@
         </div>
         <div class="statusbar"><span id="status-message"><span class="status-dot muted"></span> Waiting for a folder</span><span id="branch-label">GITHUB</span></div>
     </section>
-  </main>
+    </div>
     <section class="proposal-section" id="proposal" aria-labelledby="proposal-section-title">
       <div class="proposal-heading">
         <p class="eyebrow">OUR GROUP PROJECT</p>
@@ -106,7 +107,7 @@
       <a class="proposal-card-button" href="https://sushant0101n-gif.github.io/team-4-project/proposal/index.html" target="_blank" rel="noopener noreferrer">Open Proposal <span aria-hidden="true">↗</span></a>
       </article>
     </section>
-    <section class="audit-showcase" id="week-9-assignments" aria-labelledby="audit-showcase-title">
+    <section class="audit-showcase" id="week-9-assignments" tabindex="-1" aria-labelledby="audit-showcase-title">
       <p class="eyebrow">FEATURED INDIVIDUAL ASSIGNMENTS · TEAM 4 PROJECT</p>
       <h2 id="audit-showcase-title">Lighthouse audits<span>.</span></h2>
       <p class="audit-intro">These two assignments audit the Group 4 Student Budget Tracker. The Team 4 website is the audit target; this personal portfolio presents the reports, evidence, and optimization work.</p>
@@ -166,6 +167,7 @@
         <p class="site-contact-status" id="site-contact-status" role="status" aria-live="polite"></p>
       </form>
     </section>
+  </main>
     <script>
       document.querySelector("#site-contact-form").addEventListener("submit", function(event) {
         event.preventDefault();
