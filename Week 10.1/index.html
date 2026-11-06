@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Saiman Silwal's accessible, responsive student portfolio showcasing programming skills, projects, and interests.">
+  <meta name="theme-color" content="#101827">
+  <title>Saiman Silwal | Portfolio</title>
+  <style>
+    :root{color-scheme:light;--bg:#f5f7fb;--surface:#fff;--text:#172033;--muted:#46536a;--accent:#075fba;--accent-hover:#064b91;--line:#d5dce7;--hero:#101827;--hero-text:#f8fafc;--chip:#e8f1fc;--shadow:0 12px 34px rgba(20,35,60,.08)}
+    [data-theme="dark"]{color-scheme:dark;--bg:#0b1220;--surface:#131e30;--text:#f3f6fc;--muted:#c0ccdc;--accent:#8fc4ff;--accent-hover:#b4d8ff;--line:#34445c;--chip:#1b304a;--shadow:0 12px 34px rgba(0,0,0,.22)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:5rem}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+    a{color:var(--accent);text-underline-offset:4px}a:hover{color:var(--accent-hover)}a:focus-visible,button:focus-visible{outline:3px solid #d97706;outline-offset:4px;border-radius:5px}
+    .skip-link{position:absolute;top:8px;left:8px;z-index:10;padding:10px 14px;background:#fff;color:#111827;transform:translateY(-160%);border-radius:8px}.skip-link:focus{transform:translateY(0)}
+    .site-header{background:var(--hero);color:var(--hero-text)}.nav-wrap{max-width:1100px;margin:auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:800;letter-spacing:.04em;color:#fff;text-decoration:none}.nav-links{display:flex;align-items:center;gap:22px;flex-wrap:wrap}.nav-links a{color:#f8fafc;text-decoration:none;font-weight:600}.nav-links a:hover{text-decoration:underline}
+    .theme-toggle{border:1px solid #91a4c0;border-radius:999px;background:#1d2b41;color:#fff;padding:9px 14px;font:inherit;font-weight:650;cursor:pointer}
+    .hero{background:var(--hero);color:var(--hero-text);padding:78px 24px 88px}.hero-inner{max-width:1100px;margin:auto}.eyebrow{margin:0 0 14px;color:#a9c9ee;font-size:.82rem;font-weight:750;letter-spacing:.13em;text-transform:uppercase}.hero h1{max-width:800px;margin:0;font-size:clamp(2.6rem,7vw,5rem);line-height:1.06;letter-spacing:-.045em}.hero h1 span{color:#8fc4ff}.hero p.lead{max-width:720px;color:#e0e8f4;font-size:1.15rem;margin:24px 0}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.button{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:10px 18px;border-radius:8px;background:#8fc4ff;color:#102039;text-decoration:none;font-weight:750}.button:hover{background:#b4d8ff;color:#102039}.button.secondary{background:transparent;color:#fff;border:1px solid #a9bad1}
+    main{max-width:1100px;margin:auto;padding:54px 24px 72px}.section{margin:0 0 58px}.section-heading{margin:0 0 8px;font-size:clamp(1.7rem,4vw,2.25rem);line-height:1.2}.section-intro{max-width:720px;margin:0 0 24px;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{min-width:0;padding:24px;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}.card h3{margin:0 0 9px;font-size:1.18rem}.card p{margin:0;color:var(--muted)}.tag-list{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.tag{display:inline-block;padding:5px 10px;background:var(--chip);color:var(--text);border-radius:999px;font-size:.84rem;font-weight:650}
+    .about-panel{padding:28px;background:var(--surface);border:1px solid var(--line);border-radius:14px}.about-panel p{max-width:850px;margin:0;color:var(--muted)}
+    .contact-panel{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:28px;background:var(--surface);border:1px solid var(--line);border-radius:14px}.contact-panel p{margin:6px 0 0;color:var(--muted)}
+    .site-footer{padding:28px 24px;background:var(--hero);color:#e7edf7;text-align:center}.site-footer p{margin:4px}
+    @media(max-width:760px){.nav-wrap{align-items:flex-start;flex-direction:column}.nav-links{gap:12px 18px}.grid{grid-template-columns:1fr}.hero{padding:58px 20px 66px}main{padding:42px 20px 58px}.card{padding:21px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#home" aria-label="Saiman Silwal portfolio home">SAIMAN SILWAL</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Switch to dark mode</button>
+      </nav>
+    </div>
+  </header>
+  <section class="hero" id="home" aria-labelledby="hero-title">
+    <div class="hero-inner">
+      <p class="eyebrow">Computer Engineering Student · Gachon University</p>
+      <h1 id="hero-title">Hello, I'm <span>Saiman.</span></h1>
+      <p class="lead">I'm a Computer Engineering student from Nepal, currently studying in South Korea. I'm building my skills in programming, web development, cloud computing, and machine learning—one project at a time.</p>
+      <div class="hero-actions"><a class="button" href="#projects">Explore my projects</a><a class="button secondary" href="#contact">Get in touch</a></div>
+    </div>
+  </section>
+  <main id="main-content">
+    <section class="section" id="about" aria-labelledby="about-title">
+      <h2 class="section-heading" id="about-title">About me</h2>
+      <p class="section-intro">A little about what I study, what I enjoy, and what I'm working toward.</p>
+      <div class="about-panel"><p>I'm interested in how technology can solve practical problems. At university, I am learning programming fundamentals and developing experience through web, cloud, and machine-learning assignments. Outside my studies, I enjoy anime, gaming, and exploring creative ideas. My goal is to keep improving and build useful applications that make a positive difference.</p></div>
+    </section>
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <h2 class="section-heading" id="skills-title">Skills & interests</h2>
+      <p class="section-intro">Technologies and topics I'm learning through coursework and practice.</p>
+      <div class="grid">
+        <article class="card"><h3>Programming</h3><p>Foundational experience with C, C++, Java, and Python. I continue to strengthen problem-solving through exercises and projects.</p><div class="tag-list"><span class="tag">C / C++</span><span class="tag">Java</span><span class="tag">Python</span></div></article>
+        <article class="card"><h3>Web & cloud</h3><p>Learning semantic HTML, responsive CSS, JavaScript, cloud design, deployment, and application architecture.</p><div class="tag-list"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Cloud</span></div></article>
+        <article class="card"><h3>Creative interests</h3><p>I enjoy anime, gaming, technology, and turning creative ideas into interesting digital experiences.</p><div class="tag-list"><span class="tag">Anime</span><span class="tag">Gaming</span><span class="tag">Design</span></div></article>
+      </div>
+    </section>
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <h2 class="section-heading" id="projects-title">Selected projects</h2>
+      <p class="section-intro">A selection of coursework and projects that reflect what I'm learning.</p>
+      <div class="grid">
+        <article class="card"><h3>Cloud-Based Assignment Submission System</h3><p>A cloud-focused student system concept covering user roles, assignment submission, grading, storage, security, monitoring, and backups.</p><div class="tag-list"><span class="tag">Cloud computing</span><span class="tag">System design</span></div></article>
+        <article class="card"><h3>Student Budget Tracker</h3><p>A group web project exploring a practical way for students to record expenses and understand their spending.</p><div class="tag-list"><span class="tag">Team project</span><span class="tag">Web development</span></div></article>
+        <article class="card"><h3>Machine Learning Exercises</h3><p>Coursework exploring regression, classification, and K-nearest neighbors with Python and model evaluation.</p><div class="tag-list"><span class="tag">Python</span><span class="tag">Machine learning</span></div></article>
+      </div>
+    </section>
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <h2 class="section-heading" id="contact-title">Contact</h2>
+      <div class="contact-panel"><div><h3>Let's connect</h3><p>Thank you for visiting my portfolio. Feel free to explore my coursework and projects.</p></div><a class="button" href="https://github.com/saimansilwal7-oss" target="_blank" rel="noopener noreferrer">Visit my GitHub</a></div>
+    </section>
+  </main>
+  <footer class="site-footer"><p>© 2026 Saiman Silwal · Computer Engineering Student</p><p>Built with semantic HTML, responsive CSS, and JavaScript.</p></footer>
+  <script>
+    const themeButton = document.querySelector("#theme-toggle");
+    themeButton.addEventListener("click", () => {
+      const isDark = document.documentElement.dataset.theme !== "dark";
+      if (isDark) document.documentElement.dataset.theme = "dark";
+      else delete document.documentElement.dataset.theme;
+      themeButton.setAttribute("aria-pressed", String(isDark));
+      themeButton.textContent = isDark ? "Switch to light mode" : "Switch to dark mode";
+    });
+  </script>
+</body>
+</html>
