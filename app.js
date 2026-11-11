@@ -366,6 +366,18 @@ const STATIC_TREES = {
     { "path": "Screenshots/lighthouse-temporary-check.png", "type": "blob", "size": 1386221 },
     { "path": "Week9-2_Overall-Performance-99.png", "type": "blob", "size": 133225 },
     { "path": "Week9-2_Performance-Metrics.png", "type": "blob", "size": 259205 }
+  ],
+  "Week 10.1": [
+    { "path": "index.html", "type": "blob", "size": 8039 },
+    { "path": "styles.css", "type": "blob", "size": 11654 },
+    { "path": "script.js", "type": "blob", "size": 1115 },
+    { "path": "README.md", "type": "blob", "size": 1737 },
+    { "path": "assets/profile.jpg", "type": "blob", "size": 4439 }
+  ],
+  "Week 10.2": [
+    { "path": ".github/workflows/deploy.yml", "type": "blob", "size": 763 },
+    { "path": "index.html", "type": "blob", "size": 8039 },
+    { "path": "README.md", "type": "blob", "size": 1737 }
   ]
 
 };
@@ -381,7 +393,10 @@ const SHARED_FOLDERS = [
   { label: "WEEK 8.1", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK%208.1" },
   { label: "WEEK 8.2", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/WEEK%208.2" },
   { label: "Week 9.1", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/Week%209.1" },
-  { label: "Week 9.2", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/Week%209.2" },];
+  { label: "Week 9.2", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/Week%209.2" },
+  { label: "Week 10.1", url: "https://github.com/saimansilwal7-oss/portfolio/tree/main" },
+  { label: "Week 10.2", url: "https://github.com/saimansilwal7-oss/portfolio/tree/main" },
+];
 
 const elements = {
   repoContext: document.querySelector("#repo-context"),
