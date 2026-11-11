@@ -594,3 +594,43 @@ body::after {
   scrollbar-gutter: stable;
 }
 .file-tree:focus-within { outline: 2px solid rgba(157, 243, 227, .55); outline-offset: -2px; }
+
+
+/* Week-by-week project gallery */
+.assignment-hub {
+  width: min(1180px, calc(100% - 36px));
+  margin: 0 auto 54px;
+  padding: clamp(22px, 4vw, 40px);
+  border: 1px solid rgba(157, 174, 255, .28);
+  border-radius: 22px;
+  background: linear-gradient(145deg, rgba(12, 18, 40, .98), rgba(22, 25, 57, .98));
+  box-shadow: 0 16px 42px rgba(0,0,0,.22);
+}
+.assignment-heading,.future-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:24px}
+.assignment-heading h2,.future-heading h3{margin:0;color:#f5f4ff;font:800 clamp(27px,4vw,39px)/1.12 var(--display,Manrope,sans-serif);letter-spacing:-.04em}
+.assignment-heading h2 span,.future-heading h3 span{color:#9df3e3}
+.assignment-heading>div>p:last-child,.future-heading>p{max-width:520px;margin:10px 0 0;color:#b5c0df;font-size:13px;line-height:1.7}
+.gallery-count{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;width:70px;height:70px;border:1px solid rgba(157,243,227,.55);border-radius:18px;background:rgba(157,243,227,.08);color:#9df3e3;font:800 24px var(--mono,monospace)}
+.gallery-count small{font:700 8px var(--mono,monospace);letter-spacing:1px}
+.week-feature-card{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:clamp(20px,3vw,34px);align-items:center;margin-top:26px;padding:clamp(14px,2vw,22px);border:1px solid rgba(157,174,255,.25);border-radius:17px;background:linear-gradient(125deg,rgba(27,35,72,.9),rgba(14,22,44,.96))}
+.week-feature-image{display:block;width:100%;height:auto;aspect-ratio:1200/560;object-fit:cover;border:1px solid rgba(157,174,255,.3);border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,.25)}
+.week-feature-copy{min-width:0}.week-label,.future-tag{display:inline-block;margin:0 0 9px;color:#9df3e3;font:700 10px var(--mono,monospace);letter-spacing:1.5px}
+.week-feature-copy h3{margin:0 0 10px;color:#f5f4ff;font:800 clamp(21px,2.6vw,29px)/1.18 var(--display,Manrope,sans-serif)}
+.week-feature-copy>p:not(.week-label){margin:0;color:#b5c0df;font-size:13px;line-height:1.7}
+.week-checks{display:grid;gap:7px;margin:16px 0 4px;padding:0;list-style:none;color:#e1e7ff;font-size:12px}
+.week-checks li:before{content:"✓";display:inline-grid;place-items:center;width:18px;height:18px;margin-right:9px;border-radius:50%;background:#9df3e3;color:#101a31;font-weight:900}
+.week-feature-copy .audit-actions{margin-top:14px}
+.future-weeks{margin-top:28px;padding-top:25px;border-top:1px solid rgba(157,174,255,.2)}
+.future-heading{align-items:center}
+.future-heading h3{font-size:clamp(22px,3vw,29px)}
+.future-heading>p{max-width:430px;margin:0}
+.future-week-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}
+.future-week-card{display:flex;align-items:center;gap:16px;min-width:0;padding:17px;border:1px dashed rgba(157,174,255,.3);border-radius:13px;background:rgba(9,15,33,.48)}
+.future-art{flex:0 0 58px;width:58px;height:58px;display:grid;place-items:center;border-radius:15px;font:800 23px var(--mono,monospace)}
+.future-art-code{background:linear-gradient(145deg,#9d69ff,#4b9bff);color:#fff}
+.future-art-layers{background:linear-gradient(145deg,#164b63,#236f7e);color:#9df3e3;font-size:30px}
+.future-week-card h4{margin:0 0 4px;color:#f5f4ff;font:700 15px var(--display,Manrope,sans-serif)}
+.future-week-card p{margin:0;color:#aebada;font-size:11px;line-height:1.55}
+@media(max-width:760px){.week-feature-card{grid-template-columns:1fr}.week-feature-image{max-height:280px}.assignment-heading{align-items:flex-start}.future-heading{align-items:flex-start;flex-direction:column}.future-week-grid{grid-template-columns:1fr}}
+@media(max-width:680px){.assignment-hub{width:calc(100% - 24px);padding:18px}.gallery-count{width:58px;height:58px;border-radius:14px}.week-feature-copy .audit-actions a{flex:1 1 100%}}
+@media(prefers-reduced-motion:reduce){.week-feature-image{scroll-behavior:auto}}
