@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+<title id="title">Week 10.1 Git and GitHub portfolio project artwork</title><desc id="desc">A glowing laptop showing a personal portfolio, with Git branch lines, code symbols, and a GitHub-inspired project badge.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10152f"/><stop offset=".55" stop-color="#1d2050"/><stop offset="1" stop-color="#351b56"/></linearGradient>
+ <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9c68ff"/><stop offset=".55" stop-color="#4c9fff"/><stop offset="1" stop-color="#8af0df"/></linearGradient>
+ <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#162b54"/><stop offset="1" stop-color="#10172c"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1200" height="560" rx="30" fill="url(#bg)"/>
+<g opacity=".22" fill="none" stroke="#8e9dff"><path d="M0 420 Q230 290 450 420 T900 390 T1200 360"/><path d="M0 470 Q230 340 450 470 T900 440 T1200 410"/></g>
+<g fill="#c4b8ff" opacity=".8"><circle cx="90" cy="80" r="3"/><circle cx="210" cy="160" r="2"/><circle cx="1060" cy="95" r="3"/><circle cx="980" cy="420" r="2"/><circle cx="780" cy="70" r="2"/></g>
+<g transform="translate(110 100)">
+ <rect x="0" y="0" width="650" height="360" rx="20" fill="#080d1c" stroke="url(#edge)" stroke-width="7" filter="url(#glow)"/>
+ <rect x="17" y="17" width="616" height="326" rx="11" fill="url(#screen)"/>
+ <rect x="17" y="17" width="616" height="42" rx="11" fill="#222c4b"/>
+ <circle cx="43" cy="38" r="6" fill="#ff7f9e"/><circle cx="65" cy="38" r="6" fill="#ffd36c"/><circle cx="87" cy="38" r="6" fill="#8ce7bf"/>
+ <text x="115" y="44" font-family="Arial,sans-serif" font-size="15" fill="#dbe4ff">SAIMAN SILWAL  /  PORTFOLIO</text>
+ <rect x="40" y="82" width="205" height="235" rx="12" fill="#293d68"/>
+ <circle cx="142" cy="160" r="55" fill="#8c77ff" opacity=".5"/>
+ <circle cx="142" cy="150" r="42" fill="#c7d8f6"/>
+ <path d="M100 151 Q142 95 184 151 L178 186 L106 186Z" fill="#1d2945"/>
+ <path d="M83 286 Q90 205 142 205 Q195 205 202 286Z" fill="#7db6df"/>
+ <text x="270" y="115" font-family="Arial,sans-serif" font-size="16" fill="#9df3e3" letter-spacing="3">COMPUTER ENGINEERING</text>
+ <text x="270" y="163" font-family="Arial,sans-serif" font-weight="700" font-size="38" fill="#ffffff">Hello, I'm Saiman.</text>
+ <rect x="270" y="185" width="290" height="9" rx="4" fill="#8394c8" opacity=".8"/>
+ <rect x="270" y="207" width="245" height="9" rx="4" fill="#8394c8" opacity=".55"/>
+ <rect x="270" y="245" width="130" height="35" rx="8" fill="#a66bff"/>
+ <text x="291" y="268" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#fff">MY PROJECTS</text>
+ <path d="M-22 362 H672 L725 405 Q730 415 710 420 H-62 Q-82 415 -77 405Z" fill="#8794b5" stroke="#c7d4ff" stroke-width="3"/>
+ <rect x="245" y="373" width="160" height="7" rx="3" fill="#29324e"/>
+</g>
+<g transform="translate(850 105)" filter="url(#glow)">
+ <circle cx="130" cy="130" r="112" fill="#171d42" stroke="url(#edge)" stroke-width="5"/>
+ <path d="M78 151 Q62 116 87 91 Q109 69 133 83 Q157 70 180 93 Q202 116 185 151 L185 174 Q185 189 170 189 H94 Q78 189 78 174Z" fill="#f3f2ff"/>
+ <path d="M102 180 Q108 159 96 149 M164 180 Q158 159 170 149" fill="none" stroke="#171d42" stroke-width="12" stroke-linecap="round"/>
+ <circle cx="115" cy="126" r="9" fill="#171d42"/><circle cx="151" cy="126" r="9" fill="#171d42"/>
+</g>
+<g fill="#fff" font-family="Arial,sans-serif"><text x="860" y="370" font-size="34" font-weight="700">WEEK 10.1</text><text x="860" y="410" font-size="21" fill="#b7c6ff">GIT · GITHUB · PORTFOLIO</text><text x="860" y="462" font-size="16" fill="#9df3e3">CREATE  /  COMMIT  /  SHARE</text></g>
+<g stroke="#9c78ff" stroke-width="4" fill="none" opacity=".9"><path d="M805 465 H770 V510 H720"/><circle cx="805" cy="465" r="8" fill="#9c78ff"/><circle cx="720" cy="510" r="8" fill="#9c78ff"/></g>
+</svg>
