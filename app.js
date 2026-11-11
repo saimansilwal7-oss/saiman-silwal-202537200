@@ -368,10 +368,12 @@ const STATIC_TREES = {
     { "path": "Week9-2_Performance-Metrics.png", "type": "blob", "size": 259205 }
   ],
   "Week 10.1": [
-    { "path": "README.md", "type": "blob", "size": 650 },
+    { "path": "README.md", "type": "blob", "size": 1100 },
     { "path": "index.html", "type": "blob", "size": 8039 },
     { "path": "styles.css", "type": "blob", "size": 11646 },
-    { "path": "script.js", "type": "blob", "size": 1111 }
+    { "path": "script.js", "type": "blob", "size": 1111 },
+    { "path": "git-workflow-checklist.md", "type": "blob", "size": 2200 },
+    { "path": "git-branch-merge-evidence.md", "type": "blob", "size": 1100 }
   ],
   "Week 10.2": [
     { "path": "README.md", "type": "blob", "size": 1100 }
