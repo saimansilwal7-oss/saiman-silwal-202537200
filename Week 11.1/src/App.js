@@ -26,8 +26,7 @@ function App() {
         <p className="hero-kicker">A collection of things I've built</p>
         <h1>My Project<br /><span>Gallery.</span></h1>
         <p className="hero-description">
-          I'm Saiman Silwal, a Computer Engineering student learning by building.
-          Explore my projects and filter them by the technologies I use.
+          I'm Saiman Silwal. I'm studying Computer Engineering and still learning web development step by step. These are some of the projects I've worked on. You can use the buttons below to filter them.
         </p>
         <a className="hero-link" href="https://github.com/saimansilwal7-oss" target="_blank" rel="noreferrer">
           Explore my GitHub <span aria-hidden="true">↗</span>
