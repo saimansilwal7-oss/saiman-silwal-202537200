@@ -1,42 +1,44 @@
-# Week 11.1 — React Portfolio Gallery
+# Week 11.1 — My React Project Gallery
 
-A Create React App project for the Web Programming Week 11.1 homework.
+This is my Week 11.1 Web Programming assignment. I made a small gallery to practise React components, props, lists, keys, and filtering.
 
-## Assignment requirements
+## What I made
 
-- **ProjectCard:** A reusable component that displays each project's title, description, technology stack, GitHub link, and demo link.
-- **ProjectList:** Renders four project cards from a JavaScript array using `.map()`.
-- **FilterBar:** Provides working **ALL**, **REACT**, **NODE**, and **CSS** filters.
-- **React state:** The selected filter is stored with `useState`; `useMemo` derives the filtered project list.
-- **Responsive design:** The gallery adapts to smaller screens and includes visible keyboard-focus styles.
+- **ProjectCard:** Shows one project's name, short description, technologies, and links.
+- **ProjectList:** Uses `.map()` to show the project cards from an array.
+- **FilterBar:** Has ALL, REACT, NODE, and CSS buttons. Selecting a button changes which projects are shown.
+- **State and props:** I keep the selected filter in `App` with `useState`, then pass the value and function to `FilterBar` through props.
+- **Keys:** Each project uses its ID as a key. The filter buttons and technology tags also have keys.
+- **Empty result:** If a filter has no matching projects, the page shows a short message instead of an empty space.
+- **Mobile layout:** The cards change to one column on a small screen.
 
-## Professor's key takeaways demonstrated
+## What I understood from this lesson
 
-1. **Components are functions that return JSX.** `ProjectCard`, `ProjectList`, `FilterBar`, and `App` are function components that return JSX.
-2. **Props flow one way — from parent to child.** `App` passes `activeFilter` and `onFilterChange` to `FilterBar`, and passes the filtered `projects` array to `ProjectList`. Child components receive props; they do not directly change the parent's state. The callback lets the child request a change while the state remains in the parent.
-3. **Every list item needs a unique, stable key.** The project cards use `key={project.id}`; the filter buttons use `key={filter}`; technology tags use `key={technology}`.
-4. **Conditional rendering.** `ProjectList` returns an empty-state message when there are no matching projects, and otherwise renders the project grid.
-5. **Component composition.** `App` combines the smaller `FilterBar` and `ProjectList` components to build the complete gallery.
+1. A React component is a function that returns JSX. I used this for the gallery, cards, list, and filter bar.
+2. Props go from the parent component to the child component. In my project, `App` sends the filter value and change function to `FilterBar`.
+3. Lists need stable keys. I used each project's ID so React can keep track of the cards.
+4. I used conditional rendering in `ProjectList` to show a message when there are no matching projects.
+5. I put smaller components together in `App` to make the full page.
 
-## Run locally
+## Run it on my computer
 
-This project uses Create React App.
+1. Open this folder in VS Code or a terminal.
+2. Run:
 
 ```bash
-cd "Week 11.1"
 npm install
 npm start
 ```
 
-Open http://localhost:3000 in your browser.
+3. Open http://localhost:3000.
 
-To create a production build:
+To make a production build, run:
 
 ```bash
 npm run build
 ```
 
-## Project structure
+## Folder structure
 
 ```text
 Week 11.1/
@@ -59,12 +61,14 @@ Week 11.1/
         └── App.css
 ```
 
-## Online links
+The GitHub Pages preview loads the same component files from `src/`, so I do not need to keep a second copy of the React components.
 
-- [Interactive gallery preview](https://saimansilwal7-oss.github.io/saiman-silwal-202537200/Week%2011.1/preview.html)
-- [Week 11.1 source folder on GitHub](https://github.com/saimansilwal7-oss/saiman-silwal-202537200/tree/main/Week%2011.1)
-- [Personal weekly assignment website](https://saimansilwal7-oss.github.io/saiman-silwal-202537200/)
+## My links
 
-Student: Saiman Silwal  
-Student ID: 202537200  
-Course: Web Programming
+- [Open the gallery preview](https://saimansilwal7-oss.github.io/saiman-silwal-202537200/Week%2011.1/preview.html)
+- [See the Week 11.1 files on GitHub](https://github.com/saimansilwal7-oss/saiman-silwal-202537200/tree/main/Week%2011.1)
+- [Open my weekly assignment website](https://saimansilwal7-oss.github.io/saiman-silwal-202537200/)
+
+**Student:** Saiman Silwal  
+**Student ID:** 202537200  
+**Course:** Web Programming
