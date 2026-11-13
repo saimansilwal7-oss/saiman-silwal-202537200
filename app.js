@@ -379,18 +379,18 @@ const STATIC_TREES = {
     { "path": "README.md", "type": "blob", "size": 1100 }
   ],
   "Week 11.1": [
-    { "path": "README.md", "type": "blob", "size": 4200 },
-    { "path": "package.json", "type": "blob", "size": 500 },
-    { "path": "preview.html", "type": "blob", "size": 900 },
-    { "path": "preview.js", "type": "blob", "size": 6500 },
-    { "path": "public/index.html", "type": "blob", "size": 500 },
-    { "path": "src/App.js", "type": "blob", "size": 1200 },
-    { "path": "src/index.js", "type": "blob", "size": 300 },
-    { "path": "src/data/projects.js", "type": "blob", "size": 1800 },
-    { "path": "src/components/ProjectCard.js", "type": "blob", "size": 700 },
-    { "path": "src/components/ProjectList.js", "type": "blob", "size": 600 },
-    { "path": "src/components/FilterBar.js", "type": "blob", "size": 900 },
-    { "path": "src/styles/App.css", "type": "blob", "size": 2500 }
+    { "path": "README.md", "type": "blob", "size": 2750 },
+    { "path": "package.json", "type": "blob", "size": 522 },
+    { "path": "preview.html", "type": "blob", "size": 667 },
+    { "path": "preview.js", "type": "blob", "size": 4781 },
+    { "path": "public/index.html", "type": "blob", "size": 474 },
+    { "path": "src/App.js", "type": "blob", "size": 2102 },
+    { "path": "src/index.js", "type": "blob", "size": 255 },
+    { "path": "src/data/projects.js", "type": "blob", "size": 1743 },
+    { "path": "src/components/ProjectCard.js", "type": "blob", "size": 1037 },
+    { "path": "src/components/ProjectList.js", "type": "blob", "size": 420 },
+    { "path": "src/components/FilterBar.js", "type": "blob", "size": 617 },
+    { "path": "src/styles/App.css", "type": "blob", "size": 4768 }
   ]
 
 };
