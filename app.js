@@ -377,6 +377,20 @@ const STATIC_TREES = {
   ],
   "Week 10.2": [
     { "path": "README.md", "type": "blob", "size": 1100 }
+  ],
+  "Week 11.1": [
+    { "path": "README.md", "type": "blob", "size": 4200 },
+    { "path": "package.json", "type": "blob", "size": 500 },
+    { "path": "preview.html", "type": "blob", "size": 900 },
+    { "path": "preview.js", "type": "blob", "size": 6500 },
+    { "path": "public/index.html", "type": "blob", "size": 500 },
+    { "path": "src/App.js", "type": "blob", "size": 1200 },
+    { "path": "src/index.js", "type": "blob", "size": 300 },
+    { "path": "src/data/projects.js", "type": "blob", "size": 1800 },
+    { "path": "src/components/ProjectCard.js", "type": "blob", "size": 700 },
+    { "path": "src/components/ProjectList.js", "type": "blob", "size": 600 },
+    { "path": "src/components/FilterBar.js", "type": "blob", "size": 900 },
+    { "path": "src/styles/App.css", "type": "blob", "size": 2500 }
   ]
 
 };
@@ -395,6 +409,7 @@ const SHARED_FOLDERS = [
   { label: "Week 9.2", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/Week%209.2" },
   { label: "Week 10.1", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/Week%2010.1" },
   { label: "Week 10.2", url: "https://github.com/saimansilwal7-oss/WEB-PROGRAMMING/tree/main/Week%2010.2" },
+  { label: "Week 11.1", url: "https://github.com/saimansilwal7-oss/saiman-silwal-202537200/tree/main/Week%2011.1" },
 ];
 
 const elements = {
