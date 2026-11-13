@@ -34,7 +34,7 @@ function FilterBar({ activeFilter, onFilterChange }) {
 }
 function App() {
   const [activeFilter, setActiveFilter] = React.useState("ALL");
-  const visible = galleryProjects.filter((project) => activeFilter === "ALL" || project.tech.some((tech) => tech.toUpperCase() === activeFilter));
+  const visible = galleryProjects.filter((project) => activeFilter === "ALL" || project.tech.some((tech) => tech.toUpperCase().startsWith(activeFilter)));
   return h("main", { className: "page-shell" },
     h("header", { className: "hero" },
       h("div", { className: "hero-topline" }, h("span", { className: "eyebrow" }, "WEB PROGRAMMING / WEEK 11.1"), h("span", { className: "student-id" }, "STUDENT · 202537200")),
