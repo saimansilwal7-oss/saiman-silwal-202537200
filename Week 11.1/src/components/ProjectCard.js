@@ -21,7 +21,11 @@ function ProjectCard({ project }) {
 
       <div className="project-links">
         <a href={githubUrl} target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-        <a className="demo-link" href={demoUrl} target="_blank" rel="noreferrer">Live demo <span aria-hidden="true">↗</span></a>
+        {demoUrl ? (
+          <a className="demo-link" href={demoUrl} target="_blank" rel="noreferrer">Live demo <span aria-hidden="true">↗</span></a>
+        ) : (
+          <span className="project-status">Still working on it</span>
+        )}
       </div>
     </article>
   );
